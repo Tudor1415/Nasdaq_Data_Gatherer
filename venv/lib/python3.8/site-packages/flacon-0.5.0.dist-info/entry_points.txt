@@ -1,0 +1,3 @@
+[console_scripts]
+flacon-example = example.app:main
+

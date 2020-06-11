@@ -1,0 +1,20 @@
+{
+    "Exchange": "NASDAQ-GS",
+    "Sector": "Technology",
+    "Industry": "Industrial Machinery/Components",
+    "OneYrTarget": "$320.00",
+    "TodayHighLow": "$351.57/$343.11",
+    "ShareVolume": "1,001,581",
+    "AverageVolume": "817,887",
+    "PreviousClose": "$357.22",
+    "FiftTwoWeekHighLow": "$364.16/$189.49",
+    "MarketCap": "148,661,651,622",
+    "PERatio": 50.32,
+    "ForwardPE1Yr": "48.04",
+    "EarningsPerShare": "$6.94",
+    "AnnualizedDividend": "$2.478",
+    "ExDividendDate": "Apr 24, 2020",
+    "DividendPaymentDate": "May 6, 2020",
+    "Yield": "0.69%",
+    "Beta": 1.0
+}

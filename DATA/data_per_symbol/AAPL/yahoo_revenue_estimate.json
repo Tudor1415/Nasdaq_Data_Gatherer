@@ -1,0 +1,7 @@
+{
+    "Row_Name": ["No. of Analysts", "Avg. Estimate", "Low Estimate", "High Estimate", "Year Ago Sales"],
+    "Current_Quarter": ["28", "51.34B", "42.8B", "54.52B", "53.81B"],
+    "Next_Quarter": ["28", "61.88B", "50.47B", "69.86B", "64.04B"],
+    "Current_Year": ["35", "263.31B", "252.81B", "273.88B", "260.17B"],
+    "Next_Year": ["34", "296.32B", "261.66B", "326.68B", "263.31B"]
+}

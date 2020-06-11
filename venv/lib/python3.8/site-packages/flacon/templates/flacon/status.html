@@ -1,0 +1,14 @@
+{% extends "flacon/base.html" %}
+
+{% block title %}{{ flacon.name }}{% endblock %}
+
+{% block content %}
+    <h1>{{ flacon.name }}</h1>
+{% if flacon.debug %}
+<pre>{{ app }}</pre>
+
+<pre>{{ config }}</pre>
+
+<pre>{{ request }}</pre>
+{% endif %}
+{% endblock %}
