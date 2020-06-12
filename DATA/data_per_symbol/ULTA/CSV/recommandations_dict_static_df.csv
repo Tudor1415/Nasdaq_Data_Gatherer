@@ -1,0 +1,172 @@
+Firm@To Grade@From Grade@Action
+Jefferies@Hold@@main
+Oppenheimer@Outperform@@main
+Jefferies@Hold@@main
+JP Morgan@Overweight@@main
+PiperJaffray@Overweight@@main
+Oppenheimer@Outperform@@main
+Goldman Sachs@Buy@@init
+Jefferies@Hold@@main
+PiperJaffray@Overweight@@main
+PiperJaffray@Overweight@@main
+Goldman Sachs@Buy@@main
+Wells Fargo@Outperform@Market Perform@up
+Credit Suisse@Outperform@@init
+Credit Suisse@Neutral@Outperform@down
+Sterne Agee@Buy@@init
+Oppenheimer@Perform@Outperform@down
+Credit Suisse@Outperform@Neutral@up
+Goldman Sachs@Buy@@main
+Sterne Agee@Buy@@main
+Jefferies@Buy@Hold@up
+Goldman Sachs@Neutral@Buy@down
+Sterne Agee@Buy@@main
+Jefferies@Buy@@main
+Jefferies@Buy@@main
+Citigroup@Buy@@init
+Jefferies@Buy@@main
+Jefferies@Hold@Buy@down
+PiperJaffray@Neutral@Overweight@down
+Citigroup@Buy@@main
+KeyBanc@Buy@@init
+KeyBanc@Buy@@init
+Goldman Sachs@Buy@Neutral@up
+Cowen & Co.@Market Perform@@init
+JP Morgan@Overweight@@main
+Morgan Stanley@Equal-Weight@@init
+JP Morgan@Overweight@@main
+KeyBanc@Buy@@main
+Jefferies@Hold@@main
+Morgan Stanley@Equal-Weight@@main
+Raymond James@Outperform@@init
+Nomura@Buy@@init
+Oppenheimer@Outperform@Perform@up
+Oppenheimer@Outperform@@main
+Cleveland Research@Buy@@init
+Oppenheimer@Outperform@@main
+Evercore ISI Group@Buy@@init
+PiperJaffray@Overweight@Neutral@up
+Nomura@Buy@Neutral@up
+Buckingham Research@Buy@@init
+JP Morgan@Overweight@@main
+Deutsche Bank@Hold@@init
+Morgan Stanley@Equal-Weight@@main
+Buckingham Research@Buy@@main
+Deutsche Bank@Hold@@main
+RBC Capital@Sector Perform@@init
+Wolfe Research@Peer Perform@Outperform@down
+Stifel Nicolaus@Hold@@init
+PiperJaffray@Overweight@@main
+Raymond James@Strong Buy@Outperform@up
+Wolfe Research@Outperform@Peer Perform@up
+Nomura@Buy@@main
+Deutsche Bank@Hold@@main
+JP Morgan@Overweight@@main
+BB&T Capital@Hold@@init
+Raymond James@Market Perform@Strong Buy@down
+Jefferies@Hold@@main
+KeyBanc@Overweight@@main
+Buckingham Research@Buy@@main
+Deutsche Bank@Hold@@main
+JP Morgan@Overweight@@main
+PiperJaffray@Overweight@@main
+Baird@Outperform@@main
+Deutsche Bank@Hold@@main
+Jefferies@Hold@@main
+Baird@Outperform@@main
+Cowen & Co.@Outperform@@main
+Nomura@Buy@@main
+Buckingham Research@Buy@@main
+Loop Capital@Buy@Hold@up
+Buckingham@Neutral@Buy@down
+Goldman Sachs@Buy@Neutral@up
+Oppenheimer@Perform@Outperform@down
+BMO Capital@Market Perform@Outperform@down
+KeyBanc@Overweight@@main
+Jefferies@Buy@@main
+Buckingham@Neutral@@main
+Morgan Stanley@Equal-Weight@@main
+PiperJaffray@Neutral@Overweight@down
+Buckingham@Buy@Neutral@up
+Wells Fargo@Outperform@Market Perform@up
+Morgan Stanley@Overweight@Equal-Weight@up
+Buckingham@Buy@Buy@main
+KeyBanc@Overweight@Overweight@main
+Stifel Nicolaus@Hold@Hold@main
+Loop Capital@Buy@Buy@main
+Credit Suisse@Outperform@Outperform@main
+Deutsche Bank@Hold@Hold@main
+Morgan Stanley@Overweight@Overweight@main
+JP Morgan@Overweight@Overweight@main
+BMO Capital@Market Perform@Market Perform@main
+PiperJaffray@Overweight@Neutral@up
+Guggenheim@Buy@Neutral@up
+Loop Capital@Hold@Buy@down
+Oppenheimer@Outperform@Perform@up
+Buckingham@Buy@Buy@main
+Baird@Outperform@Outperform@main
+BMO Capital@Market Perform@Market Perform@main
+Credit Suisse@Outperform@Outperform@main
+Goldman Sachs@Neutral@Buy@down
+Wells Fargo@Outperform@Outperform@main
+Stifel Nicolaus@Hold@Hold@main
+Stifel Nicolaus@Hold@Hold@main
+UBS@Buy@Buy@main
+Morgan Stanley@Overweight@Overweight@main
+UBS@Buy@Buy@main
+Morgan Stanley@Overweight@Overweight@main
+BMO Capital@Market Perform@Market Perform@main
+UBS@Buy@Buy@main
+Wells Fargo@Outperform@Outperform@main
+Oppenheimer@Outperform@Outperform@main
+Wells Fargo@Outperform@Outperform@main
+Nomura@Neutral@Buy@down
+Nomura@Neutral@Neutral@main
+BMO Capital@Market Perform@Market Perform@main
+Wells Fargo@Outperform@Outperform@main
+Morgan Stanley@Overweight@Overweight@main
+Morgan Stanley@Overweight@Overweight@main
+Deutsche Bank@Hold@@main
+Morgan Stanley@Overweight@@main
+OTR Global@Mixed@Positive@down
+Piper Jaffray@Neutral@Overweight@down
+Wells Fargo@Market Perform@Outperform@down
+Atlantic Equities@Neutral@Overweight@down
+Morgan Stanley@Equal-Weight@Overweight@down
+UBS@Buy@@main
+Stifel@Hold@@main
+Telsey Advisory Group@Outperform@@main
+Credit Suisse@Outperform@@main
+Cowen & Co.@Outperform@@main
+Citigroup@Neutral@Buy@down
+Wells Fargo@Market Perform@Outperform@down
+Cowen & Co.@Outperform@@main
+PiperJaffray@Neutral@@main
+Barclays@Equal-Weight@@main
+Deutsche Bank@Buy@@reit
+Wells Fargo@Market Perform@@main
+JP Morgan@Overweight@@main
+Nomura@Reduce@@main
+Barclays@Equal-Weight@@main
+Oppenheimer@Outperform@@main
+Goldman Sachs@Buy@Neutral@up
+Nomura@Neutral@Reduce@up
+Credit Suisse@Outperform@@main
+Wells Fargo@Equal-Weight@@main
+Citigroup@Neutral@@main
+CFRA@Buy@@main
+UBS@Buy@@main
+Stifel@Hold@@main
+Baird@Outperform@@main
+Nomura@Neutral@@main
+Wells Fargo@Equal-Weight@@main
+Morgan Stanley@Equal-Weight@@main
+Nomura@Neutral@@main
+Citigroup@Buy@Neutral@up
+Wells Fargo@Overweight@Equal-Weight@up
+Nomura@Neutral@@main
+Oppenheimer@Outperform@@main
+Deutsche Bank@Buy@@main
+Nomura Instinet@Neutral@@main
+Piper Sandler@Overweight@Neutral@up
+Morgan Stanley@Equal-Weight@@main

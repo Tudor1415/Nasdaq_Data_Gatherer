@@ -1,1 +1,26 @@
-{"ModuleTitle": "Company Description", "CompanyName": "Apple Inc.", "Symbol": "AAPL", "Address": "ONE APPLE PARK WAY, CUPERTINO, California, 95014, United States of America", "Phone": "(408) 996-1010", "Industry": "Computer Manufacturing", "Sector": "Technology", "Region": "North America", "CompanyDescription": "The Company designs, manufactures and markets smartphones, personal computers,\r\ntablets, wearables and accessories, and sells a variety of related services. The\r\nCompany's fiscal year is the 52- or 53-week period that ends on the last\r\nSaturday of September. The Company is a California corporation established in\r\n1977.\r\nProducts\r\niPhone\r\niPhone\u00ae is the Company's line of smartphones based on its iOS operating system.\r\nIn September 2019, the Company introduced three new iPhones: iPhone 11, iPhone\r\n11 Pro and iPhone 11 Pro Max.\r\nMac\r\nMac\u00ae is the Company's line of personal computers based on its macOS\u00ae operating\r\nsystem. During 2019, the Company released a new version of MacBook Air\u00ae and a\r\nnew Mac mini\u00ae, and introduced an updated Mac Pro\u00ae, which is expected to be\r\navailable in the fall of 2019.\r\niPad\r\niPad\u00ae is the Company's line of multi-purpose tablets. iPad is based on the\r\nCompany's iPadOS(TM) operating system, which was introduced during 2019.&nbsp;&nbsp;... <a href=\"http://secfilings.nasdaq.com/edgar_conv_html%2f2019%2f10%2f31%2f0000320193-19-000119.html#FIS_BUSINESS\" target=\"_blank\">More</a> ...&nbsp;&nbsp;\r\n", "KeyExecutives": [{"name": "Jeffrey E. Williams", "title": "Chief Operating Officer"}, {"name": "Kevin M. Lynch", "title": "Vice President-Technology"}, {"name": "Luca Maestri", "title": "Chief Financial Officer & Senior Vice President"}, {"name": "Timothy Donald Cook", "title": "Chief Executive Officer & Director"}], "Number_of_employees": ["7,000"], "Subsidiaries": ["Braeburn Capital", "Beats Electronics", "Apple Energy", "Apple Sales", "Sales International", "How Apple", "Apple Services", "Apple Looks", "Move Beyond", "Price Ceiling", "Bloomberg L.", "Apple Worldwide", "Worldwide Video", "Apple Goes", "Hollywood. Will", "Will Its", "Its Story", "Story Have", "Happy Ending", "The New", "New York", "York Times"]}
+{
+    "ModuleTitle": "Company Description",
+    "CompanyName": "Apple Inc.",
+    "Symbol": "AAPL",
+    "Address": "ONE APPLE PARK WAY, CUPERTINO, California, 95014, United States of America",
+    "Phone": "(408) 996-1010",
+    "Industry": "Computer Manufacturing",
+    "Sector": "Technology",
+    "Region": "North America",
+    "CompanyDescription": "The Company designs, manufactures and markets smartphones, personal computers,\r\ntablets, wearables and accessories, and sells a variety of related services. The\r\nCompany's fiscal year is the 52- or 53-week period that ends on the last\r\nSaturday of September. The Company is a California corporation established in\r\n1977.\r\nProducts\r\niPhone\r\niPhone\u00ae is the Company's line of smartphones based on its iOS operating system.\r\nIn September 2019, the Company introduced three new iPhones: iPhone 11, iPhone\r\n11 Pro and iPhone 11 Pro Max.\r\nMac\r\nMac\u00ae is the Company's line of personal computers based on its macOS\u00ae operating\r\nsystem. During 2019, the Company released a new version of MacBook Air\u00ae and a\r\nnew Mac mini\u00ae, and introduced an updated Mac Pro\u00ae, which is expected to be\r\navailable in the fall of 2019.\r\niPad\r\niPad\u00ae is the Company's line of multi-purpose tablets. iPad is based on the\r\nCompany's iPadOS(TM) operating system, which was introduced during 2019.&nbsp;&nbsp;... <a href=\"http://secfilings.nasdaq.com/edgar_conv_html%2f2019%2f10%2f31%2f0000320193-19-000119.html#FIS_BUSINESS\" target=\"_blank\">More</a> ...&nbsp;&nbsp;\r\n",
+    "KeyExecutives": [{
+        "name": "Jeffrey E. Williams",
+        "title": "Chief Operating Officer"
+    }, {
+        "name": "Kevin M. Lynch",
+        "title": "Vice President-Technology"
+    }, {
+        "name": "Luca Maestri",
+        "title": "Chief Financial Officer & Senior Vice President"
+    }, {
+        "name": "Timothy Donald Cook",
+        "title": "Chief Executive Officer & Director"
+    }],
+    "Number_of_employees": ["7,000"],
+    "Subsidiaries": ["Braeburn Capital", "Beats Electronics", "Apple Energy", "Apple Sales", "Sales International", "How Apple", "Apple Services", "Apple Looks", "Move Beyond", "Price Ceiling", "Bloomberg L.", "Apple Worldwide", "Worldwide Video", "Apple Goes", "Hollywood. Will", "Will Its", "Its Story", "Story Have", "Happy Ending", "The New", "New York", "York Times"]
+}

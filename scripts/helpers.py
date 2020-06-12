@@ -397,6 +397,7 @@ def get_wikipedia_search_data_for_institution(institutions_name:list):
     return_dict = {"Name":[], "Description":[], "NoShare(Trillion)":[], "KeyPeople":[]}
     
     def get_info(name, return_dict):
+        key_people = []
         return_dict["Name"].append(name)
         try:
             return_dict["Description"].append(page.summary)
@@ -409,7 +410,8 @@ def get_wikipedia_search_data_for_institution(institutions_name:list):
             return_dict["NoShare(Trillion)"].append("NO INFO")
         try:
             for i in re.findall(r"\[\[\s*(.*?)(?=\s*\]\]|$)", wppage.data["infobox"]['key_people']):
-                return_dict["KeyPeople"].append(i)
+                key_people.append(i)
+            return_dict["KeyPeople"].append(key_people)
         except:
             return_dict["KeyPeople"].append("NO INFO")
 

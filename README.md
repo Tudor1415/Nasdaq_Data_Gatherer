@@ -24,6 +24,9 @@ It will download the needed server and automatically set it up for you
 
 ## API:
 
+    - Get historical data: symbol, datefrom, dateto, country
+    returns open, high, low, close, volume
+    
     - Get news articles: symbol, no of articles, datefrom, dateto
     returns: News title, link, date, content
 

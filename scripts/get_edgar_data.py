@@ -67,7 +67,8 @@ def get_balance_sheet_table(table):
     column_list = ["Cash and cash equivalents",
                    "Marketable securities",
                    "Inventories",
-                   "Total assets"] # List of all the desired columns
+                   "Total assets",
+                   "Total liabilities"] # List of all the desired columns
 
     # Getting all the objects in the table
     for tr in trs:
@@ -77,8 +78,11 @@ def get_balance_sheet_table(table):
                 object_list.append(font.text)
 
     object_list = object_list[object_list.index('Cash and cash equivalents'):]
-    number_list = re.findall(r"\d+,\d+", "".join(object_list)) # List of all the numbers in the object_list
-    category_list = re.findall(r"([A-Z]\D+[^\.!?$0-9,]+)", "".join(object_list)) # List of all the categories in he table
+    number_list = re.findall(r"\d+,\d+", "".join(object_list).replace(u'\xa0',' ')) # List of all the numbers in the object_list
+    category_list = re.findall(r"([A-Z][^$0-9,:]+)", "".join(object_list).replace(u'\xa0',' ')) # List of all the categories in he table
+    unwanted_category_list = [i.replace(":","") for i in re.findall(r"([A-Z][^$0-9,]+:)", "".join(object_list).replace(u'\xa0',' '))]
+    
+    category_list = [i for i in category_list if not i in unwanted_category_list]
 
     for i in column_list:
         print(number_list[category_list.index(i)])
@@ -105,7 +109,7 @@ def get_edgar_10q_content(documentUrl):
 
 
 
-print(get_edgar_10q_content("/Archives/edgar/data/320193/000032019319000010/a10-qq1201912292018.htm"))
+# print(get_edgar_10q_content("/Archives/edgar/data/320193/000032019319000010/a10-qq1201912292018.htm"))
 
 def get_edgar_10q_items(url):
     """
