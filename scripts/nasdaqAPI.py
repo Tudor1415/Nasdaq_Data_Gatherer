@@ -30,7 +30,7 @@ class NasdaqDataStreamer():
     - (OS) Ownership summary
     - (ALL) All of the possible data
     '''
-    def __init__(self, settings, remote=False):
+    def __init__(self, settings, remote=False, verbose = True):
         self.requestedData = settings
          
         self.nasdaqUrl_KeyData = f'https://www.nasdaq.com/market-activity/stocks/{settings["SYM"].lower()}'
@@ -54,7 +54,7 @@ class NasdaqDataStreamer():
         self.display.start()
 
         self.remote = remote
-
+        self.verbose = verbose
 
     def update(self, settings):
         self.requestedData = settings 
@@ -286,7 +286,10 @@ class NasdaqDataStreamer():
                     try:
                         WebDriverWait(self.nasdaqNewsBrowser,10).until(EC.element_to_be_clickable((By.CSS_SELECTOR,f".pagination__next"))).click()
                         # WebDriverWait(self.nasdaqNewsBrowser,10).until(EC.element_to_be_clickable((By.CSS_SELECTOR,f"button.pagination__page:nth-child({page})"))).click()
-                        print(f"Page change to: {page}")
+                        if self.verbose:
+                            print(f"Page change to: {page}, {self.requestedData['SYM']}")
+                        else:
+                            open("nasdaq_data_logs.txt", "w+").write(f"Page change to: {page}, {self.requestedData['SYM']}")
                         page += 1
                         time.sleep(0.75)
                     except Exception as e:

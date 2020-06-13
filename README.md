@@ -21,6 +21,11 @@ If you prefer to run a docker server instead, run the following command:
 
 It will download the needed server and automatically set it up for you
 
+## Possible API's
+- AlphaVantge
+- NewsAPI (free version)
+https://newsapi.org/v2/everything?q=apple&from=2020-05-12&to=2020-06-11&sortBy=popularity&apiKey=08bff187ca1b44c4b8974614952439b2
+
 ## Posible datasets:
 - Reuters corpus v1
 ``` python
@@ -29,6 +34,7 @@ It will download the needed server and automatically set it up for you
 ```
 - Reuters-21578 Text Categorization Collection :
 https://kdd.ics.uci.edu/databases/reuters21578/reuters21578.html
+https://www.kaggle.com/nltkdata/reuters
 
 ## API:
 
@@ -329,3 +335,6 @@ datetime.datetime(2013, 12, 30, 0, 0)
 >>> article.movies
 ['http://youtube.com/path/to/link.com', ...]
 ```
+
+Online demo:
+http://newspaper-demo.herokuapp.com/

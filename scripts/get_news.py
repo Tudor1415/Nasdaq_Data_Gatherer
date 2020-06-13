@@ -6,10 +6,8 @@ import json
 symbols = ["AAPL","ADI"]
 
 for i in symbols:
-    print(i)
+    open("nasdaq_data_logs.txt", "w+").write(f"Working on {i}")
     settings = {'SYM':i, 'NWS':2400}
-    streamer = nasdaqAPI.NasdaqDataStreamer(settings) 
+    streamer = nasdaqAPI.NasdaqDataStreamer(settings, verbose=False) 
     data = streamer.run()
-    print(data['NWS'])
     open(f"../DATA/news_articles/{i}_links.json", "w+").write(json.dumps(data['NWS']))
-    print(f"Done {i}!") 
