@@ -1,8 +1,8 @@
 import nasdaqAPI
 import json
-# symbols = ["AAPL","ADI","ADP","ADSK","AMAT","AMGN","AMZN","ANSS","ASML","AVGO","BIDU","BIIB","BKNG","BMRN","CDNS","CDW","CERN","CHKP","CHTR","CMCSA","COST","CPRT","CSCO","CSGP","CSX","CTAS","CTSH","CTXS","DLTR","DXCM","EA","EBAY","EXC","EXPE","FAST","FB","FISV","FOXA","FOX","GILD","GOOG","GOOGL","IDXX","ILMN","INCY","INTC"]
+symbols = ["AAPL","ADI","ADP","ADSK","AMAT","AMGN","AMZN","ANSS","ASML","AVGO","BIDU","BIIB","BKNG","BMRN","CDNS","CDW","CERN","CHKP","CHTR","CMCSA","COST","CPRT","CSCO","CSGP","CSX","CTAS","CTSH","CTXS","DLTR","DXCM","EA","EBAY","EXC","EXPE","FAST","FB","FISV","FOXA","FOX","GILD","GOOG","GOOGL","IDXX","ILMN","INCY","INTC"]
 
-symbols = ["AAPL","ADI"]
+# symbols = ["ADI"]
 
 for i in symbols:
     open("nasdaq_data_logs.txt", "w+").write(f"Working on {i}")

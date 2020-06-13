@@ -124,3 +124,39 @@ Gdk-Message: 14:42:31.231: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource
 Gdk-Message: 14:42:31.232: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :5.
 
 Exiting due to channel error.
+1592059633423	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.GDdIq7cqN9LM"
+
+(firefox:12745): LIBDBUSMENU-GLIB-WARNING **: 14:47:14.597: Unable to get session bus: Failed to execute child process “dbus-launch” (No such file or directory)
+1592059635843	Marionette	INFO	Listening on port 46241
+1592059635933	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.nasdaq.com/market-activity/stocks/adi/news-headlines, line 2387: TypeError: Window.requestIdleCallback: Argument 1 is not an object.
+1592059803104	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.6uOFviE3keVc"
+
+(firefox:13228): LIBDBUSMENU-GLIB-WARNING **: 14:50:04.288: Unable to get session bus: Failed to execute child process “dbus-launch” (No such file or directory)
+1592059805589	Marionette	INFO	Listening on port 37267
+1592059805616	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.nasdaq.com/market-activity/stocks/adi/news-headlines, line 2387: TypeError: Window.requestIdleCallback: Argument 1 is not an object.
+Gdk-Message: 14:50:48.434: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :6.
+
+Gdk-Message: 14:50:48.434: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :6.
+
+Gdk-Message: 14:50:48.435: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :6.
+
+1592059879575	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.0O2KOiGLMYfX"
+
+(firefox:13611): LIBDBUSMENU-GLIB-WARNING **: 14:51:20.765: Unable to get session bus: Failed to execute child process “dbus-launch” (No such file or directory)
+1592059882025	Marionette	INFO	Listening on port 38103
+1592059882096	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.nasdaq.com/market-activity/stocks/adi/news-headlines, line 2387: TypeError: Window.requestIdleCallback: Argument 1 is not an object.
+JavaScript error: , line 0: uncaught exception: undefined
+1592059932874	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.W94az31WDnng"
+
+(firefox:14027): LIBDBUSMENU-GLIB-WARNING **: 14:52:14.054: Unable to get session bus: Failed to execute child process “dbus-launch” (No such file or directory)
+1592059935392	Marionette	INFO	Listening on port 45211
+1592059935494	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.nasdaq.com/market-activity/stocks/aapl/news-headlines, line 2387: TypeError: Window.requestIdleCallback: Argument 1 is not an object.
+1592059941399	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
