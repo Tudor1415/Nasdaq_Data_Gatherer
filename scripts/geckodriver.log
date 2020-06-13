@@ -1,0 +1,21 @@
+1591993181565	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile69Nvze"
+1591993183916	Marionette	INFO	Listening on port 36613
+1591993183974	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.nasdaq.com/market-activity/stocks/aapl/news-headlines, line 2387: TypeError: Window.requestIdleCallback: Argument 1 is not an object.
+1591993701439	Marionette	INFO	Stopped listening on port 36613
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x6B0029,name=PNecko::Msg_RemoveRequestContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1591993772619	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile2MUqWm"
+1591993774854	Marionette	INFO	Listening on port 42769
+1591993774933	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.nasdaq.com/market-activity/stocks/aapl/news-headlines, line 2387: TypeError: Window.requestIdleCallback: Argument 1 is not an object.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.

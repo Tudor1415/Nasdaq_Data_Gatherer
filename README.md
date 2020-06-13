@@ -21,6 +21,14 @@ If you prefer to run a docker server instead, run the following command:
 
 It will download the needed server and automatically set it up for you
 
+## Posible datasets:
+- Reuters corpus v1
+``` python
+    from sklearn.datasets import fetch_rcv1
+    rcv1 = fetch_rcv1()
+```
+- Reuters-21578 Text Categorization Collection :
+https://kdd.ics.uci.edu/databases/reuters21578/reuters21578.html
 
 ## API:
 
@@ -269,3 +277,55 @@ It will download the needed server and automatically set it up for you
     - Document_url
 
     For more information  on the meaning of each item numbr, please consult this page: https://www.sec.gov/fast-answers/answersform8khtm.html
+
+
+## Interesting papers:
+https://pabloazar.com/
+http://ceur-ws.org/Vol-862/FEOSWp4.pdf
+
+## Potentially helpful projects
+
+### PyTeaser
+https://github.com/xiaoxu193/PyTeaser
+
+
+PyTeaser takes any news article and extract a brief summary from it. It's based on the original Scala project.
+
+Summaries are created by ranking sentences in a news article according to how relevant they are to the entire text. The top 5 sentences are used to form a "summary". Each sentence is ranked by using four criteria:
+
+    Relevance to the title
+    Relevance to keywords in the article
+    Position of the sentence
+    Length of the sentence
+
+### Newspaper3k
+https://github.com/codelucas/newspaper
+
+Newspaper can extract and detect languages seamlessly. If no language is specified, Newspaper will attempt to auto detect a language.
+
+```python
+>>> from newspaper import Article
+
+>>> url = 'http://fox13now.com/2013/12/30/new-year-new-laws-obamacare-pot-guns-and-drones/'
+>>> article = Article(url)
+>>> article.download()
+
+>>> article.html
+'<!DOCTYPE HTML><html itemscope itemtype="http://...'
+>>> article.parse()
+
+>>> article.authors
+['Leigh Ann Caldwell', 'John Honway']
+
+>>> article.publish_date
+datetime.datetime(2013, 12, 30, 0, 0)
+
+>>> article.text
+'Washington (CNN) -- Not everyone subscribes to a New Year's resolution...'
+
+>>> article.top_image
+'http://someCDN.com/blah/blah/blah/file.png'
+
+>>> article.movies
+['http://youtube.com/path/to/link.com', ...]
+```

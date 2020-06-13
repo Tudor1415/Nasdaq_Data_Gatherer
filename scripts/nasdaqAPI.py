@@ -271,14 +271,14 @@ class NasdaqDataStreamer():
                     # ElapsedTime = self.nasdaqNewsBrowser.find_element_by_css_selector(f"li.quote-news-headlines__item:nth-child({i%8+1}) > a:nth-child(1) > span:nth-child(1)").text
                     # Link = self.nasdaqNewsBrowser.find_element_by_css_selector(f"li.quote-news-headlines__item:nth-child({i%8+1}) > a:nth-child(1)").get_attribute("href")
         
-                    response = requests.get(Link, headers={'User-Agent': 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.6) Gecko/20070802 SeaMonkey/1.1.4'})
-                    Time, ContentSTR = self._get_News_Content(response.text, i)
+                    # response = requests.get(Link, headers={'User-Agent': 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.6) Gecko/20070802 SeaMonkey/1.1.4'})
+                    # Time, ContentSTR = self._get_News_Content(response.text, i)
 
                     data["Title"].append(NewsTitle)
                     data["Elapsed Time"].append(ElapsedTime)
-                    data["Published Date"].append(Time)
+                    # data["Published Date"].append(Time)
                     data["Link"].append(Link)
-                    data["Content"].append(ContentSTR)
+                    # data["Content"].append(ContentSTR)
                 except:
                     pass
                 
