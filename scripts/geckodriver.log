@@ -19,3 +19,108 @@ JavaScript error: https://www.nasdaq.com/market-activity/stocks/aapl/news-headli
 Exiting due to channel error.
 Exiting due to channel error.
 Exiting due to channel error.
+1592046541548	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.dNIrEx71dOdw"
+
+(firefox:6189): LIBDBUSMENU-GLIB-WARNING **: 11:09:02.727: Unable to get session bus: Failed to execute child process “dbus-launch” (No such file or directory)
+1592046543944	Marionette	INFO	Listening on port 32937
+1592046543964	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.nasdaq.com/market-activity/stocks/aapl/news-headlines, line 2387: TypeError: Window.requestIdleCallback: Argument 1 is not an object.
+Gdk-Message: 11:09:58.902: firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+
+1592046909856	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.leIPW86gW5zi"
+
+(firefox:6730): LIBDBUSMENU-GLIB-WARNING **: 11:15:10.999: Unable to get session bus: Failed to execute child process “dbus-launch” (No such file or directory)
+1592046912310	Marionette	INFO	Listening on port 44045
+1592046912364	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.nasdaq.com/market-activity/stocks/aapl/news-headlines, line 2387: TypeError: Window.requestIdleCallback: Argument 1 is not an object.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1592046946060	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.7Ws7XD9iXchH"
+
+(firefox:7151): LIBDBUSMENU-GLIB-WARNING **: 11:15:47.209: Unable to get session bus: Failed to execute child process “dbus-launch” (No such file or directory)
+1592046948471	Marionette	INFO	Listening on port 44039
+1592046948572	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.nasdaq.com/market-activity/stocks/aapl/news-headlines, line 2387: TypeError: Window.requestIdleCallback: Argument 1 is not an object.
+Gdk-Message: 11:19:04.655: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :2.
+
+Gdk-Message: 11:19:04.660: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :2.
+
+Gdk-Message: 11:19:04.667: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :2.
+
+1592047175182	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.TiwWeMtfVcZN"
+
+(firefox:7583): LIBDBUSMENU-GLIB-WARNING **: 11:19:36.351: Unable to get session bus: Failed to execute child process “dbus-launch” (No such file or directory)
+1592047177587	Marionette	INFO	Listening on port 34743
+1592047177627	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.nasdaq.com/market-activity/stocks/aapl/news-headlines, line 2387: TypeError: Window.requestIdleCallback: Argument 1 is not an object.
+1592047203800	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.5a6vepmEBZOE"
+
+(firefox:7955): LIBDBUSMENU-GLIB-WARNING **: 11:20:05.419: Unable to get session bus: Failed to execute child process “dbus-launch” (No such file or directory)
+1592047207131	Marionette	INFO	Listening on port 37033
+1592047207211	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.nasdaq.com/market-activity/stocks/aapl/news-headlines, line 2387: TypeError: Window.requestIdleCallback: Argument 1 is not an object.
+1592047212615	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+Gdk-Message: 11:23:09.276: firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :2.
+
+1592047475611	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.XAYYl60ZurvS"
+
+(firefox:8556): LIBDBUSMENU-GLIB-WARNING **: 11:24:36.823: Unable to get session bus: Failed to execute child process “dbus-launch” (No such file or directory)
+1592047478172	Marionette	INFO	Listening on port 40171
+1592047478236	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.nasdaq.com/market-activity/stocks/aapl/news-headlines, line 2387: TypeError: Window.requestIdleCallback: Argument 1 is not an object.
+Exiting due to channel error.
+Exiting due to channel error.
+Sandbox: Unexpected EOF, op 2 flags 00 path /etc/localtime
+Exiting due to channel error.
+1592047483153	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.0rzWoPKVabuS"
+
+(firefox:8901): LIBDBUSMENU-GLIB-WARNING **: 11:24:44.353: Unable to get session bus: Failed to execute child process “dbus-launch” (No such file or directory)
+1592047485748	Marionette	INFO	Listening on port 39815
+1592047485764	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.nasdaq.com/market-activity/stocks/aapl/news-headlines, line 2387: TypeError: Window.requestIdleCallback: Argument 1 is not an object.
+1592047856948	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.eOoL0YfsaqXn"
+
+(firefox:9438): LIBDBUSMENU-GLIB-WARNING **: 11:30:58.505: Unable to get session bus: Failed to execute child process “dbus-launch” (No such file or directory)
+1592047860423	Marionette	INFO	Listening on port 38633
+1592047860466	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.nasdaq.com/market-activity/stocks/aapl/news-headlines, line 2387: TypeError: Window.requestIdleCallback: Argument 1 is not an object.
+Gdk-Message: 11:32:17.282: firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :4.
+
+1592048446997	Marionette	INFO	Stopped listening on port 38633
+1592048447627	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.6hiofWJ3a5RU"
+
+(firefox:10173): LIBDBUSMENU-GLIB-WARNING **: 11:40:48.838: Unable to get session bus: Failed to execute child process “dbus-launch” (No such file or directory)
+1592048450152	Marionette	INFO	Listening on port 43611
+1592048450242	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.nasdaq.com/market-activity/stocks/adi/news-headlines, line 2387: TypeError: Window.requestIdleCallback: Argument 1 is not an object.
+1592048869645	Marionette	INFO	Stopped listening on port 43611
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5A0006,name=PHttpChannel::Msg_Redirect2Verify) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5A0006,name=PHttpChannel::Msg_Redirect2Verify) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1592059348208	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.GSFKjQjfxN5u"
+
+(firefox:12277): LIBDBUSMENU-GLIB-WARNING **: 14:42:29.375: Unable to get session bus: Failed to execute child process “dbus-launch” (No such file or directory)
+1592059350659	Marionette	INFO	Listening on port 41297
+1592059350717	Marionette	WARN	TLS certificate errors will be ignored for this session
+Gdk-Message: 14:42:31.231: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :5.
+
+Gdk-Message: 14:42:31.232: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :5.
+
+Exiting due to channel error.
