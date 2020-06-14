@@ -1,5 +1,8 @@
-## Usage instructions
+## Problem definition
+The problem we seek to solve in this repository is the existance of the predictive nature of the stock market.
+And if, with the gathered data we can achive staisfying results in the prediction of the general trend of the market.
 
+## Usage instructions
 The virtual env is in venv
 Before you start add the gekodriver to path: export PATH=$PATH:/media/tudor/"Dtata Archive"/"trading bot"/gekodriver
 export PATH=$PATH:/media/tudor/Dtata Archive/Python_Projects/NSDQAPI/gekodriver"
@@ -338,3 +341,6 @@ datetime.datetime(2013, 12, 30, 0, 0)
 
 Online demo:
 http://newspaper-demo.herokuapp.com/
+
+## Notebooks
+The notebooks provide a simple insights and explorations of the relationships betwen the data.

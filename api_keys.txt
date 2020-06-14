@@ -3,3 +3,6 @@ AIzaSyBbJdYxfmF2AFNP36ZCtxrz8Lef_lMta5M
 
 gogle custom search:
 AIzaSyBbJdYxfmF2AFNP36ZCtxrz8Lef_lMta5M 
+
+alpha_vantage:
+7Z41ZLKXN0YMG2UG
