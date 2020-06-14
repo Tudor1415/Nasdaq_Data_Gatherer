@@ -22,7 +22,9 @@ class NasdaqNewsSpider(scrapy.Spider):
             'Published_Date': published_date,
             'Link': response.request.url
         }
-        text = open(f"{self.symbol}.json", "w+").read()
-        if text:
-            final = return_dict.update(text)
-        open(f"{self.symbol}.json", "w+").write(json.dumps(final))
+        past_data = open(f"{self.symbol}.json", "w+").read()
+        if past_data:
+            final = return_dict.update(past_data)
+            open(f"{self.symbol}.json", "w+").write(json.dumps(final))
+        else:
+            open(f"{self.symbol}.json", "w+").write(json.dumps(return_dict))
