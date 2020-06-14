@@ -120,7 +120,7 @@ class InvestpyDataStreamer:
 # symbols = json.loads(open("../DATA/nasdaq100.json", "r+").read())["symbol"]
 # for symbol in symbols:
 #     settingsStocks = {}
-#     settingsStocks['Stock'] = 'BAC'
+#     settingsStocks['Stock'] = symbol
 #     settingsStocks['Type'] = 'Stock'
 #     settingsStocks['Country'] = 'united states'
 #     settingsStocks['Timeperiod'] = [

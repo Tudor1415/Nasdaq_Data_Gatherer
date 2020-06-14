@@ -295,7 +295,7 @@ class NasdaqDataStreamer():
                     except Exception as e:
                         print(f"Error: {e}")
                         print("Error turning page!")
-                        return data
+                        break
 
             return data
         else:
