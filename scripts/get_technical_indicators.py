@@ -4,32 +4,7 @@ import pandas as pd
 import os
 
 
-def json_to_dict(data, indicator):
-    return_dict = {"Date":[], f"{indicator}_value":[]}
-    for key, value in data.items():
-        return_dict["Date"].append(key)
-        return_dict[f"{indicator}_value"].append(value[indicator])
-    return return_dict
-
-indicators = ["SMA", "EMA", "WMA","DEMA","TEMA","TRIMA","KAMA","MAMA","VWAP", "T3","MACD", "MACDEXT","STOCH", "STOCHF","RSI", "STOCHRSI","WILLR","ADX", "ADXR","APO","PPO","MOM","BOP","CCI", "CMO","ROC","ROCR","AROON", "AROONOSC","MFI","TRIX","ULTOSC","DX","MINUS_DI","PLUS_DI","MINUS_DM","PLUS_DM","BBANDS", "MIDPOINT","MIDPRICE","SAR","TRANGE","ATR","NATR","AD","ADOSC","OBV","HT_TRENDLINE","HT_SINE","HT_TRENDMODE","HT_DCPERIOD","HT_DCPHASE","HT_PHASOR"]
-
-symbols = json.loads(open("../DATA/nasdaq100.json", "r+").read())["symbol"]
-
-for symbol in symbols:
-    try:
-        os.mkdir(f"../DATA/data_per_symbol/{symbol}/CSV/indicators")
-    except:
-        pass
-    for indicator in indicators:
-        try:
-            response = requests.get(f"https://www.alphavantage.co/query?function={indicator}&symbol={symbol}&interval=weekly&time_period=100&series_type=open&apikey=7Z41ZLKXN0YMG2UG")
-            text = json.loads(response.text)
-            column = list(text)
-            print(column)
-            data = text[column[1]]
-            dict = json_to_dict(data, indicator)
-            df = pd.DataFrame.from_dict(dict)
-            df.to_csv(f"../DATA/data_per_symbol/{symbol}/CSV/indicators/{indicator}.csv", sep="@")
-            print(f"Done {indicator}, {symbol}")
-        except:
-            print(f"Error {indicator}, {symbol}")
+done = ['AAPL', 'ADI', 'ADP', 'ADSK', 'AMAT', 'AMGN', 'AMZN', 'ANSS', 'ASML', 'AVGO', 'BIDU', 'BIIB', 'BKNG', 'BMRN', 'CDNS', 'CDW', 'CERN', 'CHKP', 'CHTR', 'CMCSA', 'COST', 'CPRT', 'CSCO', 'CSGP', 'CSX', 'CTAS', 'CTSH', 'CTXS', 'DLTR', 'DXCM', 'EA', 'EBAY', 'EXC', 'EXPE', 'FAST', 'FB', 'FISV', 'FOXA', 'FOX', 'GILD', 'GOOGL', 'GOOG', 'IDXX', 'ILMN', 'INCY', 'INTC']
+allS = ['CERN', 'FOXA', 'MU', 'AAPL', 'ADBE', 'ADI', 'ADP', 'ADSK', 'ALGN', 'ALXN', 'AMAT', 'AMD', 'AMGN', 'AMZN', 'ANSS', 'ASML', 'ATVI', 'AVGO', 'BIDU', 'BIIB', 'BKNG', 'BMRN', 'CDNS', 'CDW', 'CHKP', 'CHTR', 'CMCSA', 'COST', 'CPRT', 'CSCO', 'CSGP', 'CSX', 'CTAS', 'CTSH', 'CTXS', 'DLTR', 'DXCM', 'EA', 'EBAY', 'EXC', 'EXPE', 'FAST', 'FB', 'FISV', 'FOX', 'GILD', 'GOOG', 'GOOGL', 'IDXX', 'ILMN', 'INCY', 'INTC', 'INTU', 'ISRG', 'JD', 'KHC', 'KLAC', 'LBTYA', 'LBTYK', 'LRCX', 'LULU', 'MAR', 'MCHP', 'MDLZ', 'MELI', 'MNST', 'MSFT', 'MXIM', 'NFLX', 'NTAP', 'NTES', 'NVDA', 'NXPI', 'ORLY', 'PAYX', 'PCAR', 'PEP', 'PYPL', 'QCOM', 'REGN', 'ROST', 'SBUX', 'SGEN', 'SIRI', 'SNPS', 'SPLK', 'SWKS', 'TCOM', 'TMUS', 'TSLA', 'TTWO', 'TXN', 'UAL', 'ULTA', 'VRSK', 'VRSN', 'VRTX', 'WBA', 'WDAY', 'WDC', 'XEL', 'XLNX', 'ZM']
+notDone = [i for i in allS if not i in done ]
+print(notDone)
