@@ -39,6 +39,12 @@ https://newsapi.org/v2/everything?q=apple&from=2020-05-12&to=2020-06-11&sortBy=p
 https://kdd.ics.uci.edu/databases/reuters21578/reuters21578.html
 https://www.kaggle.com/nltkdata/reuters
 
+## Custom dataset:
+Our custom dataset has over 6k example articles and about 12 classes:
+- Product
+- Stock
+- Product launch
+
 ## API:
 
     - Get historical data: symbol, datefrom, dateto, country

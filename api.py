@@ -29,7 +29,7 @@ class GetTrainingNewsCoverings(object):
 
     def on_get(self, req, resp):
         try:
-            data = json.loads(open(f"DATA/news_coverings.json", "r+").read())
+            data = json.loads(open(f"DATA/training/news_coverings.json", "r+").read())
             resp.body = json.dumps(data)
             resp.status = falcon.HTTP_201
         except:
