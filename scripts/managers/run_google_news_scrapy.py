@@ -4,16 +4,22 @@ from datetime import datetime
 def get_hour(now, future):
     return (int(now) + future) % 12
 
-with open("logs.txt", "w+") as f:
-    f.write(datetime.now().strftime('%H'))
 os.chdir("../../scrapy_spiders/news_scrapper/")
+
+with open("manager_logs.txt", "w+") as f:
+    f.write(datetime.now().strftime('%H'))
+    f.close()
 os.system(f"scrapy crawl google_news")
 os.system(f"scrapy crawl google_news_coverages")
 
 while True:
-        if datetime.now().strftime('%H') == get_hour(open("logs.txt", "r+").read(), 1):
-                change_hour = datetime.now().strftime('%H')
-                open("logs.txt", "w+").write(str(change_hour))
-                os.chdir("../../scrapy_spiders/news_scrapper/")
-                os.system(f"scrapy crawl google_news")
-                os.system(f"scrapy crawl google_news_coverages")
+    with open("manager_logs.txt", "r+") as f:
+        next_hour = get_hour(f.read(), 1)
+        f.close()
+    if datetime.now().strftime('%H') == next_hour :
+            change_hour = datetime.now().strftime('%H')
+            with open("manager_logs.txt", "w+") as f:
+                f.write(str(change_hour))
+            os.chdir("../../scrapy_spiders/news_scrapper/")
+            os.system(f"scrapy crawl google_news")
+            os.system(f"scrapy crawl google_news_coverages")
