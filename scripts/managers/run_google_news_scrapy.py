@@ -2,7 +2,7 @@ import os
 from datetime import datetime
 
 def get_hour(now, future):
-    return (int(now) + future) % 12
+    return (int(now) + future) % 24
 
 os.chdir("../../scrapy_spiders/news_scrapper/")
 
