@@ -11,9 +11,10 @@ from helpers import *
 # symbols = json.loads(open("../DATA/nasdaq100.json", "r+").read())["symbol"]
 # CIK = json.loads(open("../DATA/symbol_edgar_id.json", "r+").read())
 
-df = pd.read_csv("../DATA/nasdaq-listed-symbols.csv")
-symbols = df["Symbol"]
-names = df["Company Name"]
+df = pd.read_csv("../DATA/cik_ticker.csv", sep="|")
+df = df.loc[df["Exchange"] == "NASDAQ"]
+symbols = df["Ticker"]
+CIK = df["CIK"]
 
 print(df.head())
 for symbol in symbols:
@@ -55,8 +56,8 @@ for symbol in symbols:
         holders_detailed_profile = get_wikipedia_search_data_for_institution(institutional_holders[2]['OWNER_NAME'])
         open(f'../DATA/data_per_symbol/{symbol}/holders_detailed_profile.json', 'w+').write(json.dumps(holders_detailed_profile))
 
-        # edgar_8k_data = get_edgar_8k_data(CIK[symbol])
-        # open(f'../DATA/data_per_symbol/{symbol}/edgar_8k_data.json', 'w+').write(json.dumps(edgar_8k_data))
+        edgar_8k_data = get_edgar_8k_data(CIK[symbols.index(symbol)])
+        open(f'../DATA/data_per_symbol/{symbol}/edgar_8k_data.json', 'w+').write(json.dumps(edgar_8k_data))
 
         print(f"DONE {symbol}!")
     except:
