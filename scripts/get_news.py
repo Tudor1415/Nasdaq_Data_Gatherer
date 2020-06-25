@@ -8,7 +8,7 @@ symbols = df["Symbol"]
 
 for i in symbols:
     open("nasdaq_data_logs.txt", "w+").write(f"Working on {i}")
-    settings = {'SYM':i, 'NWS':24000}
+    settings = {'SYM':i, 'NWS':240000}
     streamer = nasdaqAPI.NasdaqDataStreamer(settings, verbose=False) 
     data = streamer.run()
     open(f"../DATA/news_articles/{i}_links.json", "w+").write(json.dumps(data['NWS']))
