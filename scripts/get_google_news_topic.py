@@ -7,27 +7,6 @@ from selenium import webdriver
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
 
-def get_nasdaq100():
-    """
-    Service: NASDAQ
-    """
-    return_dict = {}
-    response = requests.get(f"https://api.nasdaq.com/api/quote/list-type/nasdaq100")
-
-    if response.status_code == 200:
-        data = json.loads(response.text)["data"]
-        date = data["date"]
-        for i in data["data"]["rows"]:
-            for j in list(i.keys()):
-                if not j in list(return_dict.keys()):
-                    return_dict[j] = []
-                return_dict[j].append(i[j])
-        return date, return_dict
-
-    elif response.status_code == 404:
-        return "Not Found."
-
-
 def get_urls(names):
     """
     Please give the name of the company, not the symbol

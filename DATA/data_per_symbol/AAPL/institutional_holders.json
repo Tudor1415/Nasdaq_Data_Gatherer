@@ -1,16 +1,1 @@
-[{
-    "SharesOutstandingPCT": ["63.49 %"],
-    "ShareoutstandingTotal": ["4,334"],
-    "TotalHoldingsValue": ["$917,566"]
-}, {
-    "ActivePositions": ["Increased Positions", "Decreased Positions", "Held Positions", "Total Institutional Shares", "New Positions", "Sold Out Positions"],
-    "Holders": ["1,343", "2,007", "148", "3,498", "164", "123"],
-    "Shares": ["195,954,236", "114,954,427", "2,440,745,021", "2,751,653,684", "9,713,152", "5,270,797"]
-}, {
-    "OWNER_NAME": ["VANGUARD GROUP INC", "BLACKROCK INC.", "BERKSHIRE HATHAWAY INC", "STATE STREET CORP", "ADVISOR GROUP HOLDINGS, INC."],
-    "DATE": ["03/31/2020", "03/31/2020", "03/31/2020", "03/31/2020", "03/31/2020"],
-    "SHARES_HELD": ["336,728,608", "274,684,501", "245,155,566", "180,558,954", "116,768,396"],
-    "CHANGE(Shares)": ["7,405,176", "-3,086,069", "0", "-2,295,827", "115,831,226"],
-    "CHANGE(%)": ["2.249%", "-1.111%", "0%", "-1.256%", "12359.681%"],
-    "MARKET_VALUE": ["$112,285,522", "$91,596,294", "$81,749,575", "$60,209,189", "$38,937,589"]
-}]
+[{"SharesOutstandingPCT": ["63.48 %"], "ShareoutstandingTotal": ["4,334"], "TotalHoldingsValue": ["$990,754"]}, {"ActivePositions": ["Increased Positions", "Decreased Positions", "Held Positions", "Total Institutional Shares", "New Positions", "Sold Out Positions"], "Holders": ["1,344", "2,005", "150", "3,499", "162", "123"], "Shares": ["195,913,557", "114,645,985", "2,441,075,673", "2,751,635,215", "9,672,324", "5,270,797"]}, {"OWNER_NAME": ["VANGUARD GROUP INC", "BLACKROCK INC.", "BERKSHIRE HATHAWAY INC", "STATE STREET CORP", "ADVISOR GROUP HOLDINGS, INC."], "DATE": ["03/31/2020", "03/31/2020", "03/31/2020", "03/31/2020", "03/31/2020"], "SHARES_HELD": ["336,728,608", "274,684,501", "245,155,566", "180,558,954", "116,768,396"], "CHANGE(Shares)": ["7,405,176", "-3,086,069", "0", "-2,295,827", "115,831,226"], "CHANGE(%)": ["2.249%", "-1.111%", "0%", "-1.256%", "12359.681%"], "MARKET_VALUE": ["$121,242,503", "$98,902,901", "$88,270,713", "$65,012,057", "$42,043,629"]}]

@@ -117,16 +117,16 @@ class InvestpyDataStreamer:
         self.data = data
         return data
 
-# symbols = json.loads(open("../DATA/nasdaq100.json", "r+").read())["symbol"]
-# for symbol in symbols:
-#     settingsStocks = {}
-#     settingsStocks['Stock'] = symbol
-#     settingsStocks['Type'] = 'Stock'
-#     settingsStocks['Country'] = 'united states'
-#     settingsStocks['Timeperiod'] = [
-#         '01/01/2012', datetime.now().strftime("%d/%m/%Y")]
-#     settingsStocks['DataType'] = 'Historical'
-#     settingsStocks['Name'] = f"../DATA/data_per_symbol/{symbol}/historical_prices.csv"  
+symbols = json.loads(open("../DATA/nasdaq100.json", "r+").read())["symbol"]
+for symbol in symbols:
+    settingsStocks = {}
+    settingsStocks['Stock'] = symbol
+    settingsStocks['Type'] = 'Stock'
+    settingsStocks['Country'] = 'united states'
+    settingsStocks['Timeperiod'] = [
+        '01/01/2012', datetime.now().strftime("%d/%m/%Y")]
+    settingsStocks['DataType'] = 'Historical'
+    settingsStocks['Name'] = f"../DATA/data_per_symbol/{symbol}/historical_prices.csv"  
 
-#     streamer = InvestpyDataStreamer(settingsStocks)
-#     print(streamer.run())
+    streamer = InvestpyDataStreamer(settingsStocks)
+    print(streamer.run())
