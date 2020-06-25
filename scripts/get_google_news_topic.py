@@ -3,9 +3,13 @@ import re
 import time
 
 import requests
+from pyvirtualdisplay import Display
 from selenium import webdriver
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
+import pandas as pd
+
+display = Display(visible=0, size=(2000, 2000))
+display.start()
 
 def get_urls(names):
     """
@@ -48,7 +52,8 @@ def get_urls(names):
     return urls
 
 def get_topic_urls():
-    names = get_nasdaq100()[1]["companyName"]
+    df = pd.read_csv("../DATA/nasdaq-listed-symbols.csv")
+    names = df["Company Name"]
     urls = get_urls(names)
     data = {}
     for i in range(len(urls)):
@@ -58,6 +63,7 @@ def get_topic_urls():
 
 
 
-driver = webdriver.Remote(command_executor='http://172.17.0.1:4444/wd/hub', desired_capabilities=DesiredCapabilities.FIREFOX)
+driver = webdriver.Firefox()
 
 get_topic_urls()
+display.stop()
