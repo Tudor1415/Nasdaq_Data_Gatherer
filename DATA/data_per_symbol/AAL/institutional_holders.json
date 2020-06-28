@@ -1,16 +1,1 @@
-[{
-    "SharesOutstandingPCT": ["70.73 %"],
-    "ShareoutstandingTotal": ["423"],
-    "TotalHoldingsValue": ["$3,900"]
-}, {
-    "ActivePositions": ["Increased Positions", "Decreased Positions", "Held Positions", "Total Institutional Shares", "New Positions", "Sold Out Positions"],
-    "Holders": ["317", "251", "79", "647", "122", "107"],
-    "Shares": ["22,640,439", "82,621,400", "193,836,990", "299,098,829", "6,289,077", "40,348,014"]
-}, {
-    "OWNER_NAME": ["PRIMECAP MANAGEMENT CO/CA/", "VANGUARD GROUP INC", "BERKSHIRE HATHAWAY INC", "BLACKROCK INC.", "STATE STREET CORP"],
-    "DATE": ["03/31/2020", "03/31/2020", "03/31/2020", "03/31/2020", "03/31/2020"],
-    "SHARES_HELD": ["64,493,246", "43,524,836", "41,909,000", "22,824,917", "12,946,192"],
-    "CHANGE(Shares)": ["-3,966,700", "950,112", "-591,000", "-403,202", "-577,981"],
-    "CHANGE(%)": ["-5.794%", "2.232%", "-1.391%", "-1.736%", "-4.274%"],
-    "MARKET_VALUE": ["$840,992", "$567,564", "$546,493", "$297,637", "$168,818"]
-}]
+[{"SharesOutstandingPCT": ["70.73 %"], "ShareoutstandingTotal": ["423"], "TotalHoldingsValue": ["$3,900"]}, {"ActivePositions": ["Increased Positions", "Decreased Positions", "Held Positions", "Total Institutional Shares", "New Positions", "Sold Out Positions"], "Holders": ["317", "251", "79", "647", "122", "107"], "Shares": ["22,640,439", "82,621,400", "193,836,990", "299,098,829", "6,289,077", "40,348,014"]}, {"OWNER_NAME": ["PRIMECAP MANAGEMENT CO/CA/", "VANGUARD GROUP INC", "BERKSHIRE HATHAWAY INC", "BLACKROCK INC.", "STATE STREET CORP"], "DATE": ["03/31/2020", "03/31/2020", "03/31/2020", "03/31/2020", "03/31/2020"], "SHARES_HELD": ["64,493,246", "43,524,836", "41,909,000", "22,824,917", "12,946,192"], "CHANGE(Shares)": ["-3,966,700", "950,112", "-591,000", "-403,202", "-577,981"], "CHANGE(%)": ["-5.794%", "2.232%", "-1.391%", "-1.736%", "-4.274%"], "MARKET_VALUE": ["$840,992", "$567,564", "$546,493", "$297,637", "$168,818"]}]

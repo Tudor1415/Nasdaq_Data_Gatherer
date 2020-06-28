@@ -1,16 +1,1 @@
-[{
-    "SharesOutstandingPCT": ["78.74 %"],
-    "ShareoutstandingTotal": ["2,405"],
-    "TotalHoldingsValue": ["$438,143"]
-}, {
-    "ActivePositions": ["Increased Positions", "Decreased Positions", "Held Positions", "Total Institutional Shares", "New Positions", "Sold Out Positions"],
-    "Holders": ["1,475", "1,180", "207", "2,862", "213", "209"],
-    "Shares": ["112,300,350", "85,400,531", "1,695,743,880", "1,893,444,761", "18,024,902", "9,698,793"]
-}, {
-    "OWNER_NAME": ["VANGUARD GROUP INC", "BLACKROCK INC.", "FMR LLC", "PRICE T ROWE ASSOCIATES INC /MD/", "STATE STREET CORP"],
-    "DATE": ["03/31/2020", "03/31/2020", "03/31/2020", "03/31/2020", "03/31/2020"],
-    "SHARES_HELD": ["188,828,724", "159,221,271", "124,247,137", "108,819,909", "95,449,004"],
-    "CHANGE(Shares)": ["4,806,611", "1,881,299", "824,748", "989,404", "1,132,053"],
-    "CHANGE(%)": ["2.612%", "1.196%", "0.668%", "0.918%", "1.2%"],
-    "MARKET_VALUE": ["$43,694,967", "$36,843,802", "$28,750,788", "$25,180,927", "$22,086,900"]
-}]
+[{"SharesOutstandingPCT": ["78.67 %"], "ShareoutstandingTotal": ["2,407"], "TotalHoldingsValue": ["$446,248"]}, {"ActivePositions": ["Increased Positions", "Decreased Positions", "Held Positions", "Total Institutional Shares", "New Positions", "Sold Out Positions"], "Holders": ["1,477", "1,180", "208", "2,865", "214", "210"], "Shares": ["112,334,101", "85,364,698", "1,695,749,997", "1,893,448,796", "18,057,603", "9,699,913"]}, {"OWNER_NAME": ["VANGUARD GROUP INC", "BLACKROCK INC.", "FMR LLC", "PRICE T ROWE ASSOCIATES INC /MD/", "STATE STREET CORP"], "DATE": ["03/31/2020", "03/31/2020", "03/31/2020", "03/31/2020", "03/31/2020"], "SHARES_HELD": ["188,828,724", "159,221,271", "124,247,137", "108,819,909", "95,449,004"], "CHANGE(Shares)": ["4,806,611", "1,881,299", "824,748", "989,404", "1,132,053"], "CHANGE(%)": ["2.612%", "1.196%", "0.668%", "0.918%", "1.2%"], "MARKET_VALUE": ["$44,503,154", "$37,525,269", "$29,282,565", "$25,646,676", "$22,495,421"]}]
