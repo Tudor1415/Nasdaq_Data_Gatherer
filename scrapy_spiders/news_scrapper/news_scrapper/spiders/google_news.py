@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-import json
 import pandas as pd
+import json
 import requests
 import os
 import scrapy
@@ -9,8 +9,8 @@ from scrapy.shell import inspect_response
 def _get_start_urls():
     return [value for i, value in json_news_data.items() if value != "Error"]
 try:
-    nasdaq100symbols = json.loads(requests.get("http://127.0.0.1:8000/info/nasdaq_100").text)["symbol"]
-    nasdaq100names = json.loads(requests.get("http://127.0.0.1:8000/info/nasdaq_100").text)["companyName"]
+    nasdaq100symbols = json.loads(requests.get("http://127.0.0.1:8000/info/nasdaq_100").text)["Symbol"]
+    nasdaq100names = json.loads(requests.get("http://127.0.0.1:8000/info/nasdaq_100").text)["Company Name"]
     json_news_data = json.loads(requests.get("http://127.0.0.1:8000/info/google_news_links").text)
 
     start_urls = _get_start_urls()

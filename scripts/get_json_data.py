@@ -25,7 +25,7 @@ for symbol in symbols:
         except:
             pass
         profile = get_company_profile(symbol)
-        dict = get_wikipedia_search_data_for_companies([profile["CompanyName"]])
+        # dict = get_wikipedia_search_data_for_companies([profile["CompanyName"]])
         profile.update(dict)
         with open(f'../DATA/data_per_symbol/{symbol}/profile.json', 'w+') as f:
             f.write(json.dumps(profile))
@@ -61,10 +61,10 @@ for symbol in symbols:
         institutional_holders = get_nasdaq_institutional_holders(symbol)
         with open(f'../DATA/data_per_symbol/{symbol}/institutional_holders.json', 'w+') as f:
             f.write(json.dumps(institutional_holders))
-        institutional_holders = json.loads(open(f'../DATA/data_per_symbol/{symbol}/institutional_holders.json', 'r+').read())
-        holders_detailed_profile = get_wikipedia_search_data_for_institution(institutional_holders[2]['OWNER_NAME'])
-        with open(f'../DATA/data_per_symbol/{symbol}/holders_detailed_profile.json', 'w+') as f:
-            f.write(json.dumps(holders_detailed_profile))
+        # institutional_holders = json.loads(open(f'../DATA/data_per_symbol/{symbol}/institutional_holders.json', 'r+').read())
+        # holders_detailed_profile = get_wikipedia_search_data_for_institution(institutional_holders[2]['OWNER_NAME'])
+        # with open(f'../DATA/data_per_symbol/{symbol}/holders_detailed_profile.json', 'w+') as f:
+        #     f.write(json.dumps(holders_detailed_profile))
 
         edgar_8k_data = get_edgar_8k_data(CIK[symbols.index(symbol)])
         with open(f'../DATA/data_per_symbol/{symbol}/edgar_8k_data.json', 'w+')as f:
