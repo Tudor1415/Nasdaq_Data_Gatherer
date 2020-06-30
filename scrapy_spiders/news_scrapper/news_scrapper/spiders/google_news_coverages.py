@@ -6,7 +6,8 @@ import os
 import pandas as pd
 
 try:
-    coverages_links = ['https://news.google.com/' + i.split("./")[1] for i in pd.read_csv("DATA/news_coverings.csv", sep="|")["links"]]
+    # coverages_links = ['https://news.google.com/' + i.split("./")[1] for i in pd.read_csv("DATA/news_coverings.csv", sep="|")["links"]]
+    coverages_links = []
 
 except:
     coverages_links = []

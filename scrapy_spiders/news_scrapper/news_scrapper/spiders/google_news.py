@@ -7,7 +7,7 @@ import scrapy
 from scrapy.shell import inspect_response
 
 def _get_start_urls():
-    return [value for i, value in json_news_data.items() if value != "Error"]
+    return [value for value in json_news_data["Link"] if value != "Error"]
 try:
     nasdaq100symbols = json.loads(requests.get("http://127.0.0.1:8000/info/nasdaq_100").text)["Symbol"]
     nasdaq100names = json.loads(requests.get("http://127.0.0.1:8000/info/nasdaq_100").text)["Company Name"]
@@ -19,16 +19,15 @@ except:
     start_urls = []
 
 
-
 class GoogleNewsSpider(scrapy.Spider):
     name = 'google_news'
     allowed_domains = ['https://news.google.com/']
     start_urls = start_urls
 
     def _get_coverage_symbol(self, link):
-        for key, value in json_news_data.items():
+        for idx, value in enumerate(json_news_data["Link"]):
             if value == link:
-                return nasdaq100symbols[nasdaq100names.index(key)]
+                return nasdaq100symbols[nasdaq100names.index(json_news_data["Name"][idx])]
 
     def _get_coverage_links(self, Links):
         return [link for link in Links if "/stories/" in link]
@@ -45,6 +44,7 @@ class GoogleNewsSpider(scrapy.Spider):
 
         return_df = pd.DataFrame.from_dict(return_dict)
         return_df.reset_index(drop=True, inplace=True)
+
         if "news_coverings.csv" in os.listdir("DATA"):
             exists = True
             past_data = pd.read_csv("DATA/news_coverings.csv", sep="|")
