@@ -2,3 +2,541 @@
 1593095485503	Marionette	INFO	Listening on port 46433
 1593095485576	Marionette	WARN	TLS certificate errors will be ignored for this session
 1593095495387	Marionette	INFO	Stopped listening on port 46433
+1593339752952	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileeh7WOZ"
+1593339755715	Marionette	INFO	Listening on port 43823
+1593339755761	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+1593339857424	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile5wtd5c"
+1593339860135	Marionette	INFO	Listening on port 39229
+1593339860234	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+1593339931145	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileOZj0Sb"
+1593339933818	Marionette	INFO	Listening on port 33509
+1593339933860	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+1593339981362	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileYU39HI"
+1593339983997	Marionette	INFO	Listening on port 43519
+1593339984072	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1593344597613	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilelAqhu0"
+1593344599958	Marionette	INFO	Listening on port 43697
+1593344600025	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+1593344657548	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileYW1TcD"
+1593344659854	Marionette	INFO	Listening on port 37425
+1593344659963	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+1593344760782	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiled3GWte"
+1593344762979	Marionette	INFO	Listening on port 44103
+1593344763000	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593344788228	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileuySb16"
+1593344790820	Marionette	INFO	Listening on port 35179
+1593344790851	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593344810059	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile7i2Qgl"
+1593344812502	Marionette	INFO	Listening on port 37139
+1593344812569	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593344849466	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileV3Izr1"
+1593344851729	Marionette	INFO	Listening on port 42645
+1593344851772	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593344934830	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile2R9SdJ"
+1593344937449	Marionette	INFO	Listening on port 36047
+1593344937537	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593344983052	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileXWpajb"
+1593344985557	Marionette	INFO	Listening on port 39963
+1593344985590	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593345026241	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileYvjpoY"
+1593345028547	Marionette	INFO	Listening on port 44315
+1593345028648	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593345125525	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileqaditN"
+1593345127813	Marionette	INFO	Listening on port 37357
+1593345127834	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1593345665379	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileZ5T5rs"
+1593345667632	Marionette	INFO	Listening on port 42015
+1593345667685	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593345692251	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiled13RK3"
+1593345694809	Marionette	INFO	Listening on port 42837
+1593345694860	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593345870480	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilegoUsqk"
+1593345873046	Marionette	INFO	Listening on port 38881
+1593345873088	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593345932300	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilewjSoSA"
+1593345934587	Marionette	INFO	Listening on port 36719
+1593345934607	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+1593345951399	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile5ibgf2"
+1593345953878	Marionette	INFO	Listening on port 46537
+1593345953933	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593346023159	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile3gSx8C"
+1593346025452	Marionette	INFO	Listening on port 43363
+1593346025468	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593346121752	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileSg4Iwo"
+1593346124114	Marionette	INFO	Listening on port 41173
+1593346124181	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593346181570	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileWFk5JL"
+1593346184085	Marionette	INFO	Listening on port 41003
+1593346184181	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593346251972	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile33VjKx"
+1593346254374	Marionette	INFO	Listening on port 36549
+1593346254385	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593346305995	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileQFa161"
+1593346308341	Marionette	INFO	Listening on port 42463
+1593346308411	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593346398622	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileDjMS9N"
+1593346401029	Marionette	INFO	Listening on port 34023
+1593346401129	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593346493030	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileTM8FV9"
+1593346495650	Marionette	INFO	Listening on port 33669
+1593346495739	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593346553739	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileGV4vhi"
+1593346556238	Marionette	INFO	Listening on port 33269
+1593346556267	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593346643031	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilen6p2OA"
+1593346645471	Marionette	INFO	Listening on port 42891
+1593346645537	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593346694259	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilebp8Jag"
+1593346696666	Marionette	INFO	Listening on port 33645
+1593346696772	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1593346753294	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileimCpYx"
+1593346755588	Marionette	INFO	Listening on port 36159
+1593346755606	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593346775795	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilejwf4Zh"
+1593346778083	Marionette	INFO	Listening on port 46201
+1593346778104	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+1593346952008	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileVy9BQD"
+1593346954344	Marionette	INFO	Listening on port 42593
+1593346954415	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+1593347055018	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileY14H4K"
+1593347057388	Marionette	INFO	Listening on port 41761
+1593347057450	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+1593347170987	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileoeGOxm"
+1593347173379	Marionette	INFO	Listening on port 35973
+1593347173394	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593347209719	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile76qZnp"
+1593347212142	Marionette	INFO	Listening on port 36447
+1593347212228	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+1593347361324	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilewvKu7j"
+1593347363649	Marionette	INFO	Listening on port 35841
+1593347363736	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+1593347419911	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilehT6uJm"
+1593347422489	Marionette	INFO	Listening on port 44403
+1593347422522	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+1593347519287	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile6OGKM8"
+1593347521621	Marionette	INFO	Listening on port 45607
+1593347521722	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+1593347605483	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileoOkUKe"
+1593347608116	Marionette	INFO	Listening on port 36793
+1593347608193	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1593348026478	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileORvDyp"
+1593348028672	Marionette	INFO	Listening on port 41179
+1593348028706	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+1593348153564	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile2w504Q"
+1593348155809	Marionette	INFO	Listening on port 34293
+1593348155871	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+1593348252839	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilekiKtpk"
+1593348255118	Marionette	INFO	Listening on port 40457
+1593348255147	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+1593348372298	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileEXUrOM"
+1593348374493	Marionette	INFO	Listening on port 34841
+1593348374519	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593348503459	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile0ilGsz"
+1593348505937	Marionette	INFO	Listening on port 45433
+1593348505996	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593348688706	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileLj66Ha"
+1593348691384	Marionette	INFO	Listening on port 40011
+1593348691415	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+1593348743506	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileKGUws3"
+1593348745812	Marionette	INFO	Listening on port 38573
+1593348745919	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1593348760179	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileRmXMIT"
+1593348762577	Marionette	INFO	Listening on port 38969
+1593348762590	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+Exiting due to channel error.
+Exiting due to channel error.
+1593348835340	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile0PDH7E"
+1593348837922	Marionette	INFO	Listening on port 44917
+1593348837950	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593348878677	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileZ7w1jc"
+1593348881001	Marionette	INFO	Listening on port 40945
+1593348881109	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1593348972484	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile3XDV0x"
+1593348974945	Marionette	INFO	Listening on port 34991
+1593348974992	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593349106064	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile20psOg"
+1593349108472	Marionette	INFO	Listening on port 40951
+1593349108575	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593349223937	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiles4hurB"
+1593349226248	Marionette	INFO	Listening on port 40209
+1593349226347	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+1593349384145	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileTObQVV"
+1593349386513	Marionette	INFO	Listening on port 41833
+1593349386580	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+1593349535170	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileKGqpCz"
+1593349537470	Marionette	INFO	Listening on port 33549
+1593349537486	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+1593349682667	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiled552Xt"
+1593349685011	Marionette	INFO	Listening on port 36373
+1593349685082	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+1593349780947	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilejwRNZc"
+1593349783319	Marionette	INFO	Listening on port 39561
+1593349783356	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+Exiting due to channel error.
+Exiting due to channel error.
+1593349861917	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileU0Rf9V"
+1593349864333	Marionette	INFO	Listening on port 41191
+1593349864446	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593349885772	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileTd2oOx"
+1593349888185	Marionette	INFO	Listening on port 37431
+1593349888280	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593349909899	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilep86YZv"
+1593349912266	Marionette	INFO	Listening on port 39473
+1593349912324	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+1593349933866	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiledvVIqj"
+1593349936184	Marionette	INFO	Listening on port 40471
+1593349936284	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593349983211	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileMS0JUa"
+1593349985712	Marionette	INFO	Listening on port 39415
+1593349985745	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1593353350430	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileXlQN0G"
+1593353352948	Marionette	INFO	Listening on port 37075
+1593353353038	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593353430669	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileiRbMF5"
+1593353433020	Marionette	INFO	Listening on port 40469
+1593353433075	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+1593353537479	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile2uAEWR"
+1593353539943	Marionette	INFO	Listening on port 40121
+1593353539995	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+1593353856574	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile2lckTE"
+1593353858984	Marionette	INFO	Listening on port 43603
+1593353859087	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+1593353884637	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile5Rvs1I"
+1593353887077	Marionette	INFO	Listening on port 33963
+1593353887184	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+1593354000567	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileMsxtMv"
+1593354003181	Marionette	INFO	Listening on port 41213
+1593354003276	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593354094791	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileTifapg"
+1593354097361	Marionette	INFO	Listening on port 41657
+1593354097400	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593354198131	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileXEyp61"
+1593354200643	Marionette	INFO	Listening on port 37945
+1593354200741	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593354308141	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilewnHG1d"
+1593354310746	Marionette	INFO	Listening on port 38173
+1593354310776	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1593354319736	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileyqLIfP"
+1593354322182	Marionette	INFO	Listening on port 44425
+1593354322258	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593354382265	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilexgs41D"
+1593354384809	Marionette	INFO	Listening on port 42315
+1593354384875	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593354408987	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileusyjFO"
+1593354411632	Marionette	INFO	Listening on port 36479
+1593354411697	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593354445229	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilel45b16"
+1593354447711	Marionette	INFO	Listening on port 46797
+1593354447762	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593354465151	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileMj3AFe"
+1593354467720	Marionette	INFO	Listening on port 44851
+1593354467759	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593354498488	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilejejf8y"
+1593354501040	Marionette	INFO	Listening on port 45453
+1593354501101	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+1593354554833	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileWjBOKP"
+1593354557354	Marionette	INFO	Listening on port 35029
+1593354557445	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+1593354713224	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileLAW6eu"
+1593354715751	Marionette	INFO	Listening on port 45967
+1593354715832	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+Gdk-Message: 20:06:29.541: firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1177.
+
+Exiting due to channel error.
+Exiting due to channel error.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5A0006,name=PHttpChannel::Msg_Redirect2Verify) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5A0006,name=PHttpChannel::Msg_Redirect2Verify) Channel closing: too late to send/recv, messages will be lost
+
+1593436931645	Marionette	INFO	Stopped listening on port 35179
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1593436931745	Marionette	INFO	Stopped listening on port 33645
+1593436931779	Marionette	INFO	Stopped listening on port 37075
+1593436931802	Marionette	INFO	Stopped listening on port 42015
+1593436931805	Marionette	INFO	Stopped listening on port 36159
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1593436931843	Marionette	INFO	Stopped listening on port 44917
+1593436931861	Marionette	INFO	Stopped listening on port 42891
+1593436931865	Marionette	INFO	Stopped listening on port 43363
+1593436931866	Marionette	INFO	Stopped listening on port 33269
+1593436931891	Marionette	INFO	Stopped listening on port 41003
+1593436931906	Marionette	INFO	Stopped listening on port 36047
+1593436931929	Marionette	INFO	Stopped listening on port 42315
+1593436931929	Marionette	INFO	Stopped listening on port 44315
+1593436931948	Marionette	INFO	Stopped listening on port 36549
+1593436931976	Marionette	INFO	Stopped listening on port 37139
+1593436931976	Marionette	INFO	Stopped listening on port 46797
+1593436931980	Marionette	INFO	Stopped listening on port 42645
+1593436931986	Marionette	INFO	Stopped listening on port 40945
+1593436932015	Marionette	INFO	Stopped listening on port 38881
+1593436932019	Marionette	INFO	Stopped listening on port 36479
+1593436932023	Marionette	INFO	Stopped listening on port 41173
+1593436932025	Marionette	INFO	Stopped listening on port 44851
+1593436932049	Marionette	INFO	Stopped listening on port 33669
+1593436932055	Marionette	INFO	Stopped listening on port 40471
+1593436932077	Marionette	INFO	Stopped listening on port 35973
+1593436932085	Marionette	INFO	Stopped listening on port 34023
+1593436932097	Marionette	INFO	Stopped listening on port 37945
+1593436932098	Marionette	INFO	Stopped listening on port 41191
+1593436932099	Marionette	INFO	Stopped listening on port 39415
+1593436932100	Marionette	INFO	Stopped listening on port 41657
+1593436932111	Marionette	INFO	Stopped listening on port 42463
+1593436932113	Marionette	INFO	Stopped listening on port 37357
+1593436932117	Marionette	INFO	Stopped listening on port 40951
+1593436932121	Marionette	INFO	Stopped listening on port 34841
+1593436932125	Marionette	INFO	Stopped listening on port 46537
+1593436932127	Marionette	INFO	Stopped listening on port 41213
+1593436932139	Marionette	INFO	Stopped listening on port 45433
+1593436932187	Marionette	INFO	Stopped listening on port 34991
+1593436932209	Marionette	INFO	Stopped listening on port 39963
+1593436932220	Marionette	INFO	Stopped listening on port 44425
+1593436932268	Marionette	INFO	Stopped listening on port 37431
+1593436932334	Marionette	INFO	Stopped listening on port 42837
+1593436932846	Marionette	INFO	Stopped listening on port 44103

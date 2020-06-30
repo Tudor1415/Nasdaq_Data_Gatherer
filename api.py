@@ -14,15 +14,15 @@ api = application = falcon.API()
 class GetNasdaq100(object):
 
     def on_get(self, req, resp):
-        data = json.loads(open("DATA/nasdaq100.json", "r+").read())
-        resp.body = json.dumps(data)
+        data = pd.read_csv("DATA/nasdaq-listed-symbols.csv")
+        resp.body = json.dumps({"Symbol": data["Symbol"].to_list(), "Company Name": data["Company Name"].to_list()})
         resp.status = falcon.HTTP_201
 
 class GetGoogleNewsLinks(object):
 
     def on_get(self, req, resp):
-        data = json.loads(open("DATA/google_news_links.json", "r+").read())
-        resp.body = json.dumps(data)
+        data = pd.read_csv("DATA/google_news_links.csv", sep="|")
+        resp.body = json.dumps({"Name": data["Name"].to_list(), "Link": data["Link"].to_list()})
         resp.status = falcon.HTTP_201
 
 class GetTrainingNewsCoverings(object):

@@ -1,1 +1,29 @@
-{"ModuleTitle": "Company Description", "CompanyName": "American Airlines Group, Inc.", "Symbol": "AAL", "Address": "1 SKYVIEW DRIVE, FORT WORTH, Texas, 76155, United States of America", "Phone": "8179631234", "Industry": "Air Freight/Delivery Services", "Sector": "Transportation", "Region": "North America", "CompanyDescription": "American Airlines Group Inc. (AAG), a Delaware corporation, is a holding company\r\nand its principal, wholly-owned subsidiaries are American Airlines, Inc.\r\n(American), Envoy Aviation Group Inc. (Envoy), PSA Airlines, Inc. (PSA) and\r\nPiedmont Airlines, Inc. (Piedmont). AAG was formed in 1982 under the name AMR\r\nCorporation (AMR) as the parent company of American, which was founded in 1934.\r\nAAG's and American's principal executive offices are located at 1 Skyview Drive,\r\nFort Worth, Texas 76155 and their telephone number is 817-963-1234.\r\nAirline Operations\r\nOur primary business activity is the operation of a major network carrier,\r\nproviding scheduled air transportation for passengers and cargo.&nbsp;&nbsp;... <a href=\"http://secfilings.nasdaq.com/edgar_conv_html%2f2020%2f02%2f19%2f0000006201-20-000023.html#FIS_BUSINESS\" target=\"_blank\">More</a> ...&nbsp;&nbsp;\r\n", "KeyExecutives": [{"name": "David G. Seymour", "title": "Senior Vice President-Operations"}, {"name": "Derek J. Kerr", "title": "Chief Financial & Accounting Officer, Executive VP"}, {"name": "Kevin Brickner", "title": "Senior Vice President-Technical Operations"}, {"name": "Maya Leibman", "title": "Chief Information Officer & Executive VP"}, {"name": "William Douglas Parker", "title": "Chairman & Chief Executive Officer"}], "Number_of_employees": ["3,700"], "Subsidiaries": ["American Airlines", "American Airlines", "Envoy Air", "Envoy Air", "Air Inc.", "Piedmont Airlines", "Piedmont Airlines"]}
+{
+    "ModuleTitle": "Company Description",
+    "CompanyName": "American Airlines Group, Inc.",
+    "Symbol": "AAL",
+    "Address": "1 SKYVIEW DRIVE, FORT WORTH, Texas, 76155, United States of America",
+    "Phone": "8179631234",
+    "Industry": "Air Freight/Delivery Services",
+    "Sector": "Transportation",
+    "Region": "North America",
+    "CompanyDescription": "American Airlines Group Inc. (AAG), a Delaware corporation, is a holding company\r\nand its principal, wholly-owned subsidiaries are American Airlines, Inc.\r\n(American), Envoy Aviation Group Inc. (Envoy), PSA Airlines, Inc. (PSA) and\r\nPiedmont Airlines, Inc. (Piedmont). AAG was formed in 1982 under the name AMR\r\nCorporation (AMR) as the parent company of American, which was founded in 1934.\r\nAAG's and American's principal executive offices are located at 1 Skyview Drive,\r\nFort Worth, Texas 76155 and their telephone number is 817-963-1234.\r\nAirline Operations\r\nOur primary business activity is the operation of a major network carrier,\r\nproviding scheduled air transportation for passengers and cargo.&nbsp;&nbsp;... <a href=\"http://secfilings.nasdaq.com/edgar_conv_html%2f2020%2f02%2f19%2f0000006201-20-000023.html#FIS_BUSINESS\" target=\"_blank\">More</a> ...&nbsp;&nbsp;\r\n",
+    "KeyExecutives": [{
+        "name": "David G. Seymour",
+        "title": "Senior Vice President-Operations"
+    }, {
+        "name": "Derek J. Kerr",
+        "title": "Chief Financial & Accounting Officer, Executive VP"
+    }, {
+        "name": "Kevin Brickner",
+        "title": "Senior Vice President-Technical Operations"
+    }, {
+        "name": "Maya Leibman",
+        "title": "Chief Information Officer & Executive VP"
+    }, {
+        "name": "William Douglas Parker",
+        "title": "Chairman & Chief Executive Officer"
+    }],
+    "Number_of_employees": ["3,700"],
+    "Subsidiaries": ["American Airlines", "American Airlines", "Envoy Air", "Envoy Air", "Air Inc.", "Piedmont Airlines", "Piedmont Airlines"]
+}
