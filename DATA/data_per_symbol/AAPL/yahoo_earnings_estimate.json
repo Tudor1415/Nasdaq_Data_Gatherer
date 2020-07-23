@@ -1,1 +1,7 @@
-{"Row_Name": ["No. of Analysts", "Avg. Estimate", "Low Estimate", "High Estimate", "Year Ago EPS"], "Current_Quarter": ["31", "2", "1.55", "2.47", "2.18"], "Next_Quarter": ["30", "2.82", "2.09", "3.64", "3.03"], "Current_Year": ["38", "12.39", "11.62", "13.69", "11.89"], "Next_Year": ["36", "14.86", "12.48", "16.75", "12.39"]}
+{
+    "Row_Name": ["No. of Analysts", "Avg. Estimate", "Low Estimate", "High Estimate", "Year Ago EPS"],
+    "Current_Quarter": ["31", "1.99", "1.55", "2.3", "2.18"],
+    "Next_Quarter": ["30", "2.81", "2.09", "3.41", "3.03"],
+    "Current_Year": ["38", "12.37", "11.62", "13.29", "11.89"],
+    "Next_Year": ["36", "14.85", "12.48", "16.75", "12.37"]
+}

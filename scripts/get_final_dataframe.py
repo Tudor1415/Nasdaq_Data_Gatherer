@@ -15,7 +15,7 @@ def getPercentageOfChange(values):
     return [round(values[i]/values[i-1], 3) for i in range(1,len(values[:-1]))]+ [None, None]
 
 def get_trapezoidal_approximation(function, b1, b2):
-     return sum([1e-2/2*(function(i)+function(i+1e-2)) for i in np.arange(b1,b2, 1e-2)])
+    return sum([1e-1/2*(function(i)+function(i+1e-1)) for i in np.arange(b1,b2, 1e-1)])
 
 def create_data_btwn_dates(group, st_date, end_date):
     df = group.set_index(st_date, drop=False)
@@ -23,9 +23,9 @@ def create_data_btwn_dates(group, st_date, end_date):
     df = df.ffill()
     return df
 
-for symbol in os.listdir('../DATA/data_per_symbol/')[os.listdir('../DATA/data_per_symbol/').index('ORLY'):]:
+for symbol in os.listdir('../DATA/data_per_symbol/'):
     # Loading all the data into dataframes
-
+    print(symbol)
     # Time series data
     try:
         balance_sheet_quarterly = pd.read_csv(f'../DATA/data_per_symbol/{symbol}/CSV/balance_sheet_quarterly.csv', sep="@")
@@ -124,19 +124,21 @@ for symbol in os.listdir('../DATA/data_per_symbol/')[os.listdir('../DATA/data_pe
         # Dropping unnecessary columns and filling Nan
         historical_prices = historical_prices.fillna(-99999)
         historical_prices = historical_prices.set_index("Date")
+    
+        final_df = historical_prices
+        if balance_sheet_quarterly_exists:
+            final_df = pd.merge(final_df, balance_sheet_quarterly, how='inner', right_index=True, left_index=True)
+        if cash_flow_df_exists:
+            final_df = pd.merge(final_df, cash_flow_df, how='inner', left_index=True, right_index=True)
+        if income_statement_df_exists:
+            final_df = pd.merge(final_df, income_statement_df, how='inner', left_index=True, right_index=True)
+        final_df.drop(final_df.columns[final_df.columns.str.contains('Unnamed',case = False)],axis = 1, inplace = True)
+        
+        # final_df["prctChangeOPEN"] = getPercentageOfChange(final_df.OPEN)
+        # TargetProbability = [get_trapezoidal_approximation(get_normal_distribution(final_df["prctChangeOPEN"][i:i+30]),1, 2)for i in range(len(final_df["prctChangeOPEN"])-30)] 
+        # final_df["TargetProbability"] = TargetProbability + [None for i in range(len(final_df["OPEN"])-len(TargetProbability))]
+        print(final_df.head())
 
-    final_df = historical_prices
-    if balance_sheet_quarterly_exists:
-        final_df = pd.merge(final_df, balance_sheet_quarterly, how='inner', left_index=True, right_index=True)
-    if cash_flow_df_exists:
-        final_df = pd.merge(final_df, cash_flow_df, how='inner', left_index=True, right_index=True)
-    if income_statement_df_exists:
-        final_df = pd.merge(final_df, income_statement_df, how='inner', left_index=True, right_index=True)
+        final_df.to_csv(f"../DATA/data_per_symbol/{symbol}/CSV/final.csv", sep="|")
 
-    print(final_df.head())
-    final_df["prctChangeOPEN"] = getPercentageOfChange(final_df.OPEN)
-    TargetProbability = [get_trapezoidal_approximation(get_normal_distribution(final_df["prctChangeOPEN"][i:i+30]),1, 2)for i in range(len(final_df["prctChangeOPEN"])-30)] 
-    final_df["TargetProbability"] = TargetProbability + [None for i in range(len(final_df["OPEN"])-len(TargetProbability))]
-    final_df.to_csv(f"../DATA/data_per_symbol/{symbol}/CSV/final.csv", sep="|")
-
-    print(f"Done: {symbol}")
+        print(f"Done: {symbol}")

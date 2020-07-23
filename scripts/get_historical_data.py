@@ -102,7 +102,7 @@ class InvestpyDataStreamer:
             data['Index'] = index
             data.columns = map(lambda x: str(x).upper(), data.columns)
             if self.name:
-                data.to_csv(f"Data/{self.name}.csv", encoding='utf-8', sep="|")
+                data.to_csv(self.name, encoding='utf-8', sep="|")
 
         elif self.dataType == 'Historical':
             data = self.choices[self.type]['Historical'](
@@ -117,16 +117,20 @@ class InvestpyDataStreamer:
         self.data = data
         return data
 
-symbols = json.loads(open("../DATA/nasdaq100.json", "r+").read())["symbol"]
+symbols = pd.read_csv("../DATA/profiles.csv", sep="|")["Symbol"]
 for symbol in symbols:
-    settingsStocks = {}
-    settingsStocks['Stock'] = symbol
-    settingsStocks['Type'] = 'Stock'
-    settingsStocks['Country'] = 'united states'
-    settingsStocks['Timeperiod'] = [
-        '01/01/2012', datetime.now().strftime("%d/%m/%Y")]
-    settingsStocks['DataType'] = 'Historical'
-    settingsStocks['Name'] = f"../DATA/data_per_symbol/{symbol}/historical_prices.csv"  
+    try:
+        settingsStocks = {}
+        settingsStocks['Stock'] = symbol
+        settingsStocks['Type'] = 'Stock'
+        settingsStocks['Country'] = 'united states'
+        settingsStocks['Timeperiod'] = [
+            '01/01/2012', datetime.now().strftime("%d/%m/%Y")]
+        settingsStocks['DataType'] = 'Historical'
+        settingsStocks['Name'] = f"../DATA/historical_prices/{symbol}.csv"  
+        print(symbol)
 
-    streamer = InvestpyDataStreamer(settingsStocks)
-    print(streamer.run())
+        streamer = InvestpyDataStreamer(settingsStocks)
+        streamer.run()
+    except:
+        print("Error")

@@ -23,26 +23,26 @@ def get_profile_to_csv(file_name):
 
     for symbol in symbols:
         try:
-            profile = get_company_profile(symbol)
-            # dict_wiki = get_wikipedia_search_data_for_companies([profile["CompanyName"]])
+            # profile = get_company_profile(symbol)
+            # # dict_wiki = get_wikipedia_search_data_for_companies([profile["CompanyName"]])
             institutional_holders = get_nasdaq_institutional_holders(symbol)[2]
-            tmp["ModuleTitle"].append(profile["ModuleTitle"])
-            tmp["CompanyName"].append(profile["CompanyName"])
-            tmp["Symbol"].append(profile["Symbol"])
-            tmp["Address"].append(profile["Address"])
-            tmp["Phone"].append(profile["Phone"])
-            tmp["Industry"].append(profile["Industry"])
-            tmp["Sector"].append(profile["Sector"])
-            tmp["Region"].append(profile["Region"])
-            # tmp["Number_of_employees"].append(dict_wiki["Number_of_employees"])
-            # tmp["Subsidiaries"].append(dict_wiki["Subsidiaries"])
-            # tmp["CompanyDescription"].append(profile["CompanyDescription"])k
-            tmp["KeyExecutives"].append([(i["name"], i["title"]) for i in profile["KeyExecutives"]])
+            # tmp["ModuleTitle"].append(profile["ModuleTitle"])
+            # tmp["CompanyName"].append(profile["CompanyName"])
+            # tmp["Symbol"].append(profile["Symbol"])
+            # tmp["Address"].append(profile["Address"])
+            # tmp["Phone"].append(profile["Phone"])
+            # tmp["Industry"].append(profile["Industry"])
+            # tmp["Sector"].append(profile["Sector"])
+            # tmp["Region"].append(profile["Region"])
+            # # tmp["Number_of_employees"].append(dict_wiki["Number_of_employees"])
+            # # tmp["Subsidiaries"].append(dict_wiki["Subsidiaries"])
+            # # tmp["CompanyDescription"].append(profile["CompanyDescription"])k
+            # tmp["KeyExecutives"].append([(i["name"], i["title"]) for i in profile["KeyExecutives"]])
             ih = []
             for idx, value in enumerate(institutional_holders["OWNER_NAME"]):
                 ih.append((value, institutional_holders["MARKET_VALUE"][idx]))
             tmp["Institutional Holders"].append(ih)
-            profile = pd.DataFrame.from_dict(tmp)
+            # profile = pd.DataFrame.from_dict(tmp)
             print(f"Done {symbol}")
             # if file_name in os.listdir("../DATA/"):
             #     old_df = pd.read_csv(f"../DATA/{file_name}", sep="|")
@@ -54,10 +54,12 @@ def get_profile_to_csv(file_name):
         except:
             print("ERROR")
 
-    return profile
+    return tmp
 
 if __name__ == "__main__":
     symbols=[]; CIK=[]
     get_symbols()
     profiles = get_profile_to_csv("profiles.csv")
-    profiles.to_csv(f"../DATA/profiles.csv", sep="|", index=False)
+    old_df = pd.read_csv(f"../DATA/profiles.csv", sep="|", index=False)
+    old_df["Institutional Holders"] = profiles["Institutional Holders"]
+    old_df.to_csv(f"../DATA/profiles.csv", sep="|", index=False)

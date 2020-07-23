@@ -348,5 +348,8 @@ datetime.datetime(2013, 12, 30, 0, 0)
 Online demo:
 http://newspaper-demo.herokuapp.com/
 
+### Pandas Ta
+Technical Indicators Library
+https://github.com/twopirllc/pandas-ta
 ## Notebooks
 The notebooks provide a simple insights and explorations of the relationships betwen the data.

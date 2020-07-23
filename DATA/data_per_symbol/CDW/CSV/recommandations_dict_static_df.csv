@@ -1,0 +1,49 @@
+Firm@To Grade@From Grade@Action
+Deutsche Bank@Buy@@init
+Goldman Sachs@Buy@@init
+JP Morgan@Overweight@@init
+Stifel Nicolaus@Buy@@init
+Barclays@Equal-Weight@@init
+Barclays@Overweight@Equal-Weight@up
+JP Morgan@Overweight@@main
+Raymond James@Outperform@@main
+Barclays@Overweight@@main
+Raymond James@Market Perform@Outperform@down
+Barclays@Overweight@@main
+JP Morgan@Overweight@@main
+RBC Capital@Outperform@@init
+Raymond James@Outperform@Market Perform@up
+JP Morgan@Overweight@@main
+Goldman Sachs@Neutral@Buy@down
+JP Morgan@Overweight@@main
+RBC Capital@Outperform@@main
+Barclays@Overweight@@init
+Goldman Sachs@Buy@@init
+Barclays@Overweight@@main
+JP Morgan@Overweight@@main
+Raymond James@Market Perform@Outperform@down
+Deutsche Bank@Buy@@main
+JP Morgan@Neutral@Overweight@down
+Baird@Outperform@Neutral@up
+Barclays@Equal-Weight@Overweight@down
+Raymond James@Underperform@Market Perform@down
+Morgan Stanley@Equal-Weight@@main
+Morgan Stanley@Equal-Weight@Equal-Weight@main
+Morgan Stanley@Equal-Weight@Equal-Weight@main
+Raymond James@Market Perform@Underperform@up
+Morgan Stanley@Equal-Weight@Equal-Weight@main
+Stifel Nicolaus@Hold@Buy@down
+Northcoast Research@Neutral@Buy@down
+Morgan Stanley@Equal-Weight@@main
+JP Morgan@Underweight@Neutral@down
+Morgan Stanley@Equal-Weight@@main
+Morgan Stanley@Underweight@Equal-Weight@down
+JP Morgan@Neutral@Underweight@up
+B of A Securities@Buy@@reit
+Morgan Stanley@Underweight@@main
+Morgan Stanley@Underweight@@main
+Credit Suisse@Outperform@@main
+Morgan Stanley@Underweight@@main
+CFRA@Hold@@main
+JP Morgan@Underweight@Neutral@down
+Morgan Stanley@Equal-Weight@Underweight@up

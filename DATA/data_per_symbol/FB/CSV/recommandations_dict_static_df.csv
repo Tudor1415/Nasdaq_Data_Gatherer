@@ -1,0 +1,458 @@
+Firm@To Grade@From Grade@Action
+Macquarie@Neutral@@init
+Wedbush@Outperform@@main
+Sterne Agee@Buy@@main
+Bernstein@Market Perform@Underperform@up
+Topeka@Buy@@main
+Ascendiant Capital@Buy@@main
+Capstone@Buy@Hold@up
+Bank of America@Neutral@@main
+JP Morgan@Overweight@@main
+Jefferies@Buy@@init
+Barclays@Equal-Weight@@main
+Deutsche Bank@Hold@@init
+Cantor Fitzgerald@Buy@@init
+Goldman Sachs@Buy@@main
+Pivotal Research@Buy@@main
+JP Morgan@Overweight@@main
+BTIG Research@Sell@Neutral@down
+Nomura@Buy@@main
+Sterne Agee@Buy@@main
+Citigroup@Buy@Neutral@up
+Bank of America@Buy@Neutral@up
+Jefferies@Buy@@main
+Deutsche Bank@Hold@@main
+Stifel Nicolaus@Buy@Hold@up
+Goldman Sachs@Buy@@main
+Barclays@Equal-Weight@@main
+Macquarie@Outperform@Neutral@up
+PiperJaffray@Overweight@@main
+Bernstein@Outperform@Market Perform@up
+BTIG Research@Neutral@Sell@up
+Topeka@Buy@@main
+Nomura@Buy@@main
+Cantor Fitzgerald@Buy@@main
+BMO Capital@Outperform@Underperform@up
+Stifel Nicolaus@Buy@@main
+JP Morgan@Overweight@@main
+Morgan Stanley@Overweight@@main
+Pivotal Research@Hold@Buy@down
+Deutsche Bank@Buy@Hold@up
+Oppenheimer@Outperform@@main
+Goldman Sachs@Buy@@main
+Topeka@Buy@@main
+Raymond James@Outperform@Market Perform@up
+Credit Suisse@Neutral@@main
+Citigroup@Neutral@Buy@down
+Jefferies@Hold@Buy@down
+BMO Capital@Market Perform@Outperform@down
+Stifel@Hold@Buy@down
+Stifel Nicolaus@Hold@Buy@down
+Pivotal Research@Buy@Hold@up
+Bernstein@Market Perform@Outperform@down
+BTIG Research@Sell@Neutral@down
+Global Equities Research@Equal-Weight@@main
+JMP Securities@Market Perform@@init
+Tigress Financial@Buy@@init
+Oracle Investment Research@Strong Buy@@init
+Argus Capital@Buy@Hold@up
+Raymond James@Strong Buy@@up
+Jefferies@Buy@Hold@up
+BMO Capital@Outperform@Market Perform@up
+Stifel Nicolaus@Buy@Hold@up
+UBS@Buy@Neutral@up
+Susquehanna@Neutral@@init
+SunTrust Robinson Humphrey@Buy@@init
+BTIG Research@Neutral@Sell@up
+JMP Securities@Outperform@Market Perform@up
+Credit Suisse@Neutral@@main
+CLSA@Buy@@main
+Barclays@Equal-Weight@@main
+UBS@Buy@@main
+Evercore Partners@Overweight@Equal-Weight@up
+Pivotal Research@Buy@@main
+Susquehanna@Neutral@@main
+Cowen & Co.@Market Perform@@main
+Oppenheimer@Outperform@@main
+Macquarie@Outperform@@main
+Stifel Nicolaus@Buy@@main
+Raymond James@Strong Buy@@main
+Wedbush@Outperform@@main
+Needham@Buy@@main
+Jefferies@Buy@@main
+JP Morgan@Overweight@@main
+RBC Capital@Outperform@@main
+Goldman Sachs@Buy@@main
+BMO Capital@Outperform@@main
+PiperJaffray@Overweight@@main
+Evercore Partners@Overweight@@main
+Janney Capital@Buy@@init
+Stifel Nicolaus@Buy@@main
+Pivotal Research@Buy@@main
+Oracle Investment Research@Hold@Strong Buy@down
+SunTrust Robinson Humphrey@Buy@@main
+JP Morgan@Overweight@@main
+JP Morgan@Overweight@@main
+Wedbush@Outperform@@main
+CRT Capital@Buy@@init
+Cowen & Co.@Outperform@Market Perform@up
+Citigroup@Buy@Neutral@up
+Canaccord Genuity@Buy@@init
+Oppenheimer@Outperform@@main
+Jefferies@Buy@@main
+Deutsche Bank@Buy@@main
+Pivotal Research@Hold@Buy@down
+Macquarie@Outperform@@main
+Sterne Agee@Buy@@main
+Raymond James@Strong Buy@Outperform@down
+Topeka@Buy@@main
+Atlantic Equities@Overweight@@init
+Evercore Partners@Overweight@@main
+Credit Suisse@Neutral@@main
+BTIG Research@Buy@Neutral@up
+BMO Capital@Market Perform@Outperform@down
+Stifel Nicolaus@Buy@@main
+Deutsche Bank@Buy@@main
+SunTrust Robinson Humphrey@Buy@@main
+Credit Suisse@Neutral@@main
+Argus Capital@Buy@@up
+Citigroup@Buy@@main
+Goldman Sachs@Buy@@main
+FBR Capital@Outperform@@init
+S&P Capital IQ@Buy@Hold@up
+JP Morgan@Overweight@@main
+Susquehanna@Positive@Neutral@up
+Cantor Fitzgerald@Buy@@main
+Morgan Stanley@Overweight@@main
+SunTrust Robinson Humphrey@Buy@@main
+Stifel Nicolaus@Buy@@main
+JMP Securities@Market Outperform@@main
+FBN Securities@Outperform@@init
+Nomura@Buy@@init
+Raymond James@Outperform@@main
+Cowen & Co.@Outperform@@main
+Credit Suisse@Neutral@@main
+Morgan Stanley@Overweight@@main
+Bank of America@Buy@@main
+Stifel Nicolaus@Buy@@main
+CRT Capital@Buy@@main
+Nomura@Buy@@main
+Evercore Partners@Equal-weight@Overweight@down
+Cowen & Co.@Outperform@@main
+Stifel@Buy@@main
+UBS@Buy@@main
+Citigroup@Buy@@reit
+Argus Capital@Hold@@down
+Susquehanna@Positive@@main
+Pivotal Research@Buy@Hold@up
+Deutsche Bank@Buy@@main
+Credit Suisse@Outperform@Neutral@up
+Canaccord Genuity@Buy@@main
+CRT Capital@Buy@@main
+Credit Suisse@Outperform@@main
+Jefferies@Buy@@main
+JMP Securities@Market Outperform@@main
+Bank of America@Buy@@main
+Stifel Nicolaus@Buy@@main
+Evercore Partners@Overweight@Equal-weight@up
+Barclays@Overweight@@init
+Tigress Financial@Neutral@Buy@down
+Barclays@Overweight@@main
+Canaccord Genuity@Buy@@main
+Credit Suisse@Outperform@@main
+Deutsche Bank@Buy@@main
+Jefferies@Buy@@main
+JMP Securities@Market Outperform@@main
+JP Morgan@Overweight@@main
+Macquarie@Outperform@@main
+Nomura@Buy@@main
+Raymond James@Outperform@@main
+UBS@Buy@@main
+Janney Capital@Neutral@Buy@down
+Nomura@Buy@@main
+Susquehanna@Positive@@main
+PiperJaffray@Market Outperform@@main
+JMP Securities@Market Outperform@@main
+Credit Suisse@Outperform@@main
+Shanghai Securities@Buy@@init
+Monness, Crespi, Hardt@Buy@@init
+Canaccord Genuity@Buy@@main
+JMP Securities@Market Outperform@@main
+Stifel Nicolaus@Buy@@main
+Stifel Nicolaus@Buy@@main
+FBN Securities@Outperform@@main
+Tigress Financial@Buy@Neutral@up
+Morgan Stanley@Overweight@@init
+Hilliard Lyons@Long-term Buy@@init
+MKM Partners@Buy@@init
+Citigroup@Buy@@main
+Bank of America@Buy@@main
+Societe Generale@Sell@@init
+Stifel Nicolaus@Buy@@main
+Axiom Capital@Buy@@init
+Brean Capital@Buy@@init
+Nomura@Buy@@main
+JMP Securities@Market Outperform@@main
+JMP Securities@Market Outperform@@main
+Citigroup@Buy@@main
+Cleveland Research@Buy@@init
+JP Morgan@Overweight@@main
+Evercore ISI Group@Buy@@main
+Brean Capital@Buy@@main
+JMP Securities@Outperform@@main
+Mizuho@Buy@@init
+Cantor Fitzgerald@Buy@@main
+Pivotal Research@Buy@@main
+SunTrust Robinson Humphrey@Buy@@main
+Credit Suisse@Outperform@@main
+Stifel Nicolaus@Buy@@main
+Susquehanna@Positive@@init
+Moffett Nathanson@Buy@@init
+Credit Suisse@Outperform@@main
+Jyske Bank@Sell@Buy@down
+Credit Suisse@Outperform@@main
+Morgan Stanley@Overweight@@main
+Barclays@Overweight@@main
+FBR Capital@Outperform@@main
+Macquarie@Outperform@@main
+Stifel Nicolaus@Buy@@main
+Deutsche Bank@Buy@@main
+SunTrust Robinson Humphrey@Buy@@main
+FBR Capital@Outperform@@main
+Stifel Nicolaus@Buy@@main
+JP Morgan@Overweight@@main
+Jefferies@Buy@@main
+Stifel Nicolaus@Buy@@main
+Cowen & Co.@Outperform@@main
+CLSA@Buy@@main
+Nomura@Buy@@main
+Deutsche Bank@Buy@@main
+Jyske Bank@Strong Buy@@init
+Citigroup@Buy@@main
+Axiom Capital@Buy@@main
+Credit Suisse@Outperform@@main
+Axiom Capital@Buy@@main
+JP Morgan@Overweight@@main
+Barclays@Overweight@@main
+Goldman Sachs@Buy@@main
+Citigroup@Buy@@main
+Credit Suisse@Outperform@@main
+Jefferies@Buy@@main
+Deutsche Bank@Buy@@main
+Baird@Outperform@@main
+JMP Securities@Market Outperform@@main
+Nomura@Buy@@main
+Cowen & Co.@Outperform@@main
+Pivotal Research@Buy@@main
+Mizuho@Buy@@main
+Canaccord Genuity@Buy@@main
+UBS@Buy@@main
+SunTrust Robinson Humphrey@Buy@@main
+Susquehanna@Positive@@main
+Evercore ISI Group@Buy@@main
+Oppenheimer@Outperform@@main
+Stifel Nicolaus@Buy@@main
+BTIG Research@Neutral@Buy@down
+Credit Suisse@Outperform@@main
+Goldman Sachs@Buy@@main
+Morgan Stanley@Overweight@@main
+RBC Capital@Outperform@@main
+Wedbush@Outperform@@main
+Axiom Capital@Buy@@main
+UBS@Buy@@main
+Deutsche Bank@Buy@@main
+Monness Crespi Hardt@Neutral@Buy@down
+CLSA@Buy@@main
+BMO Capital@Market Perform@@main
+Oppenheimer@Outperform@@main
+Wells Fargo@Overweight@@main
+William Blair@Outperform@@main
+Citigroup@Buy@@main
+Jefferies@Buy@@main
+JMP Securities@Market Outperform@@main
+Pacific Crest@Buy@@main
+Morgan Stanley@Overweight@@main
+Citigroup@Buy@@main
+Loop Capital@Buy@@init
+JP Morgan@Overweight@@main
+Credit Suisse@Outperform@@main
+Wedbush@Outperform@@main
+UBS@Buy@@main
+Jefferies@Buy@@main
+JMP Securities@Market Outperform@@main
+Canaccord Genuity@Buy@@main
+BMO Capital@Market Perform@@main
+Cowen & Co.@Outperform@@main
+RBC Capital@Outperform@@main
+Cantor Fitzgerald@Buy@@main
+BTIG Research@Neutral@Buy@down
+Wells Fargo@Outperform@@main
+Raymond James@Strong Buy@Outperform@up
+Pivotal Research@Hold@Buy@down
+BTIG Research@Buy@Neutral@up
+Credit Suisse@Outperform@@main
+Deutsche Bank@Buy@@main
+Raymond James@Strong Buy@@main
+Pivotal Research@Sell@Hold@down
+Wells Fargo@Outperform@@main
+Morgan Stanley@Overweight@@main
+Monness Crespi Hardt@Buy@Neutral@up
+Citigroup@Buy@@main
+KeyBanc@Overweight@@main
+Morgan Stanley@Overweight@@main
+Barclays@Overweight@@main
+Oppenheimer@Outperform@@main
+Credit Suisse@Outperform@@main
+Canaccord Genuity@Buy@@main
+KeyBanc@Overweight@Overweight@main
+Barclays@Overweight@Overweight@main
+Bank of America@Buy@Buy@main
+Morgan Stanley@Overweight@Overweight@main
+BMO Capital@Market Perform@Market Perform@main
+Argus@Buy@@main
+Stifel Nicolaus@Hold@Hold@main
+Baird@Outperform@Outperform@main
+Bank of America@Buy@Buy@main
+Morgan Stanley@Overweight@Overweight@main
+Credit Suisse@Outperform@Outperform@main
+Jefferies@Buy@Buy@main
+Stifel Nicolaus@Hold@Hold@main
+Wedbush@Outperform@Outperform@main
+Morgan Stanley@Overweight@Overweight@main
+Barclays@Overweight@Overweight@main
+Credit Suisse@Outperform@Outperform@main
+Raymond James@Strong Buy@Strong Buy@main
+UBS@Buy@Buy@main
+Stifel Nicolaus@Buy@Hold@up
+Argus@Buy@Buy@main
+Argus@Buy@@main
+Cowen & Co.@Outperform@Outperform@main
+Barclays@Overweight@Overweight@main
+Credit Suisse@Outperform@Outperform@main
+Stifel Nicolaus@Buy@Buy@main
+BMO Capital@Market Perform@Market Perform@main
+KeyBanc@Overweight@Overweight@main
+Stifel Nicolaus@Buy@Buy@main
+Raymond James@Outperform@Strong Buy@down
+Morgan Stanley@Overweight@Overweight@main
+UBS@Neutral@Buy@down
+Nomura@Neutral@Buy@down
+Credit Suisse@Outperform@Outperform@main
+JMP Securities@Market Outperform@Market Outperform@main
+JP Morgan@Overweight@Overweight@main
+Edward Jones@Hold@Buy@down
+Moffett Nathanson@Neutral@Buy@down
+Argus@Buy@Buy@main
+Credit Suisse@Outperform@Outperform@main
+Morgan Stanley@Overweight@Overweight@main
+Citigroup@Buy@Buy@main
+Bank of America@Buy@Buy@main
+KeyBanc@Overweight@Overweight@main
+Canaccord Genuity@Buy@Buy@main
+Deutsche Bank@Buy@Buy@main
+Citigroup@Buy@Buy@main
+BMO Capital@Market Perform@Market Perform@main
+Nomura@Neutral@Neutral@main
+Raymond James@Outperform@Outperform@main
+Morgan Stanley@Overweight@Overweight@main
+Argus@Buy@Buy@main
+Stifel Nicolaus@Hold@Buy@down
+Tigress Financial@Buy@Buy@reit
+Morgan Stanley@Overweight@Overweight@main
+Canaccord Genuity@Buy@Buy@main
+Deutsche Bank@Buy@Buy@main
+Nomura@Neutral@Neutral@main
+Raymond James@Outperform@Outperform@main
+Nomura@Buy@Neutral@up
+Needham@Hold@Buy@down
+Bank of America@Buy@Buy@reit
+Guggenheim@Buy@Neutral@up
+Morgan Stanley@Overweight@Overweight@main
+UBS@Buy@Neutral@up
+Wedbush@Outperform@Outperform@main
+KeyBanc@Overweight@Overweight@main
+Canaccord Genuity@Buy@Buy@main
+Morgan Stanley@Overweight@Overweight@main
+Deutsche Bank@Buy@Buy@main
+Barclays@Overweight@Overweight@main
+BMO Capital@Market Perform@Market Perform@main
+Nomura@Buy@Buy@main
+JMP Securities@Market Outperform@Market Outperform@main
+Raymond James@Outperform@Outperform@main
+Argus Research@Buy@Buy@main
+DZ Bank@Buy@Hold@up
+Moffett Nathanson@Buy@Neutral@up
+Deutsche Bank@Buy@@main
+KeyBanc@Overweight@@main
+Deutsche Bank@Buy@@main
+Citi@Buy@@main
+Jefferies@Buy@@main
+Nomura@Buy@@main
+Morgan Stanley@Overweight@@main
+Canaccord Genuity@Buy@@main
+Credit Suisse@Outperform@@main
+Mizuho@Buy@@main
+Monness Crespi Hardt@Buy@@main
+Baird@Outperform@@main
+Stifel Nicolaus@Hold@@main
+Credit Suisse@Outperform@@main
+Nomura@Buy@@main
+Morgan Stanley@Overweight@@main
+UBS@Buy@@main
+Wedbush@Outperform@@main
+Credit Suisse@Outperform@@main
+SunTrust Robinson Humphrey@Buy@@main
+BMO Capital@Market Perform@@main
+Mizuho@Buy@@main
+Barclays@Overweight@@main
+Stifel Nicolaus@Hold@@main
+Daiwa Capital@Buy@Outperform@up
+Stifel Nicolaus@Buy@Hold@up
+Deutsche Bank@Buy@@reit
+UBS@Buy@@main
+Morgan Stanley@Overweight@@main
+Pivotal Research@Buy@@main
+KeyBanc@Overweight@@main
+Credit Suisse@Outperform@@main
+Stifel@Buy@@main
+Raymond James@Strong Buy@Outperform@up
+KeyBanc@Overweight@@main
+Pivotal Research@Hold@Buy@down
+Susquehanna@Positive@@main
+Credit Suisse@Outperform@@main
+RBC Capital@Outperform@@main
+SunTrust Robinson Humphrey@Buy@@main
+Rosenblatt@Buy@@main
+UBS@Buy@@main
+B of A Securities@Buy@@reit
+Oppenheimer@Outperform@@main
+Pivotal Research@Sell@Hold@down
+Edward Jones@Buy@Hold@up
+Wedbush@Outperform@@main
+JP Morgan@Overweight@@main
+Citigroup@Buy@@main
+UBS@Buy@@main
+Morgan Stanley@Overweight@@main
+MKM Partners@Buy@@main
+Credit Suisse@Outperform@@main
+Mizuho@Buy@@main
+UBS@Buy@@main
+BMO Capital@Market Perform@@main
+Pivotal Research@Hold@Sell@up
+Baird@Outperform@@main
+Rosenblatt@Buy@@main
+JMP Securities@Market Outperform@@main
+Raymond James@Strong Buy@@reit
+MKM Partners@Buy@@main
+Mizuho@Buy@@main
+B of A Securities@Buy@@reit
+Morgan Stanley@Overweight@@main
+Stifel@Buy@@main
+Credit Suisse@Outperform@@main
+Oppenheimer@Outperform@@main
+UBS@Buy@@main
+Nomura Instinet@Buy@@main
+Guggenheim@Buy@@main
+SunTrust Robinson Humphrey@Buy@@main
+Canaccord Genuity@Buy@@main
+Stifel@Buy@@main

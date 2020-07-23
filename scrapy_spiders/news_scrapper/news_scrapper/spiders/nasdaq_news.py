@@ -3,7 +3,6 @@ import scrapy
 import json
 import requests
 
-
 class NasdaqNewsSpider(scrapy.Spider):
     name = 'nasdaq_news'
     allowed_domains = ['nasdaq.com']
