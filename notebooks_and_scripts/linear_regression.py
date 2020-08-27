@@ -4,7 +4,6 @@ from sklearn.model_selection import train_test_split
 
 # Training on the Apple data
 data = pd.read_csv("../DATA/training/stocks/AAPL.csv", sep ="|")
-Target = data["TargetProbability"]
 
 # data["Time"] = [i for i in range(len(data))]
 # data["constant"] = [1 for i in range(len(data))]
@@ -14,6 +13,7 @@ data.drop("TargetProbability", axis=1,inplace=True)
 data.drop("prctChangeOPEN", axis=1,inplace=True)
 
 print(data.head())
+# data["OPEN"] = data["OPEN"].shift(-30)
 
 IN, IN_test, OUT, OUT_test = train_test_split(data, Target, test_size=0.2, random_state=42)
 OUT = np.array(OUT).reshape(OUT.shape[0],1) * 100
