@@ -3,7 +3,18 @@ import pandas as pd
 from numpy.linalg import *
 import os
 import plotly.graph_objects as go
+import tensorflow as tf
 
+def get_acc(true, data):
+    acc = np.zeros_like(data)
+    print(acc.shape)
+    for i in range(data.shape[0]):
+        for j in range(data.shape[1]):
+            print(acc[i][j])
+            print(data[i][j])
+            print(true[i][j])
+            acc[i][j] = data[i][j] / true[i][j][0]
+    return acc
 
 def list_mult(list1, list2):
     products = []
@@ -14,9 +25,8 @@ def list_mult(list1, list2):
 def getPercentageOfChange(values):
     return np.array([values[i]/values[i-1] for i in range(1,len(values))])
 
-def eval_M(M, data, t=0.01):
-    change = getPercentageOfChange(data)
-    r = np.zeros((3,1)); i = np.zeros((3,1)); good = 0
+def predict(M, data, t=0.01):
+    change = getPercentageOfChange(data); preds = []; true_v = []
     for idx, value in enumerate(change[:-1]):
         c = np.zeros((3,1)); p = np.zeros((3,1)); true = np.zeros((3,1))
         if value > 1+t :
@@ -25,85 +35,138 @@ def eval_M(M, data, t=0.01):
             c[1] = 1
         else:
             c[2]=1
-
-        if change[idx+1] > 1+t:
+        if change[idx+1] > 1+t :
             true[0] = 1
-        elif change[idx+1] < 1-t:
+        elif change[idx+1] < 1-t :
             true[1] = 1
         else:
             true[2]=1
+        # p[np.where(M.dot(c) == M.dot(c).max())[0]] = 1
+        true_v.append(true)
+        P_final = M.dot(c)
+        P_final[np.where(P_final==np.max(P_final))] = 1
+        P_final[np.where(P_final!=np.max(P_final))] = 0
+        preds.append(P_final)  
+        
+    return preds, true_v
 
-        p[np.where(M.dot(c) == M.dot(c).max())[0]] = 1
-        i += true; 
-        if (p-true).T.dot((p-true)).sum() == 0:
-            good+=1
-            r +=p
-    return i, r, good
+def predict_one(M, value, t):
+    c = np.zeros((3,1))
+    if value > 1+t :
+        c[0] = 1
+    elif value < 1-t :
+        c[1] = 1
+    else:
+        c[2]=1
+    P_final = M.dot(c)
+    P_final[np.where(P_final==np.max(P_final))] = 1
+    P_final[np.where(P_final!=np.max(P_final))] = 0
+    if P_final[0] == 1:
+        return 1
+    elif P_final[1] == 1:
+        return -1
+    else:
+        return 0
+
 
 def get_Markov(data, t=0.01):
-    change = getPercentageOfChange(data)
+    try:
+        change = getPercentageOfChange(data)
 
-    E = list_mult(sum([(1+t) >= change]), sum([change >= (1-t)]))
-    D = sum([(1-t) > change])
-    U = sum([change > (1+t)])
+        E = list_mult(sum([(1+t) >= change]), sum([change >= (1-t)]))
+        D = sum([(1-t) > change])
+        U = sum([change > (1+t)])
 
-    UU = sum([1 if U[i] == 1 and U[i+1] == 1 else 0 for i in range(len(U)-1)]) / sum(U)
-    UD = sum([1 if U[i] == 1 and D[i+1] == 1 else 0 for i in range(len(U)-1)]) / sum(U)
-    UE = sum([1 if U[i] == 1 and E[i+1] == 1 else 0 for i in range(len(U)-1)]) / sum(U)
+        UU = sum([1 if U[i] == 1 and U[i+1] == 1 else 0 for i in range(len(U)-1)]) / sum(U)
+        UD = sum([1 if U[i] == 1 and D[i+1] == 1 else 0 for i in range(len(U)-1)]) / sum(U)
+        UE = sum([1 if U[i] == 1 and E[i+1] == 1 else 0 for i in range(len(U)-1)]) / sum(U)
 
-    DU = sum([1 if D[i] == 1 and U[i+1] == 1 else 0 for i in range(len(U)-1)]) / sum(D)
-    DD = sum([1 if D[i] == 1 and D[i+1] == 1 else 0 for i in range(len(U)-1)]) / sum(D)
-    DE = sum([1 if D[i] == 1 and E[i+1] == 1 else 0 for i in range(len(U)-1)]) / sum(D)
+        DU = sum([1 if D[i] == 1 and U[i+1] == 1 else 0 for i in range(len(U)-1)]) / sum(D)
+        DD = sum([1 if D[i] == 1 and D[i+1] == 1 else 0 for i in range(len(U)-1)]) / sum(D)
+        DE = sum([1 if D[i] == 1 and E[i+1] == 1 else 0 for i in range(len(U)-1)]) / sum(D)
 
-    EU = sum([1 if E[i] == 1 and U[i+1] == 1 else 0 for i in range(len(U)-1)]) / sum(E)
-    ED = sum([1 if E[i] == 1 and D[i+1] == 1 else 0 for i in range(len(U)-1)]) / sum(E)
-    EE = sum([1 if E[i] == 1 and E[i+1] == 1 else 0 for i in range(len(U)-1)]) / sum(E)
+        EU = sum([1 if E[i] == 1 and U[i+1] == 1 else 0 for i in range(len(U)-1)]) / sum(E)
+        ED = sum([1 if E[i] == 1 and D[i+1] == 1 else 0 for i in range(len(U)-1)]) / sum(E)
+        EE = sum([1 if E[i] == 1 and E[i+1] == 1 else 0 for i in range(len(U)-1)]) / sum(E)
 
-    Markov = np.array([[UU, UD, UE], [DU, DD, DE], [EU, ED, EE]], dtype=np.float64)
+        Markov = np.array([[UU, UD, UE], [DU, DD, DE], [EU, ED, EE]], dtype=np.float64)
 
+        return Markov.T
+    except:
+        return np.ones((3,3))
 
-    return Markov.T
-    # print(sum([UU, UD, UE]))
-    # print(sum([DU, DD, DE]))
-    # print(sum([EU, ED, EE]))
+def get_variance_in_30_d(data, test):
+    variance = []
+    ME1 = get_Markov(data, t=0.008)
+    ME2 = get_Markov(data, t=0.082)
+    # MU1 = get_Markov(data, t=0.018)
+    for i in test:
+        v = 1
+        for p in range(30):
+            ME1_p = np.linalg.matrix_power(ME1, p)
+            ME2_p = np.linalg.matrix_power(ME2, p)
+            v += predict_one(ME2_p, i, t=0.082) + predict_one(ME1_p, i, t=0.008)
+j        variance.append(v)
+    return variance
 
-accuracy = [2539, 2441, 2311, 2257, 2122, 1917, 1633, 1553, 1430, 1455, 1492, 1570, 1659, 1760, 1863, 1947, 2046, 2140, 2239, 2344, 2430, 2517, 2594, 2671, 2746, 2839, 2909, 2974, 3031, 3084, 3134, 3195, 3258, 3318, 3372, 3390, 3438, 3442, 3496, 3540, 3583, 3634, 3652, 3686, 3715, 3745, 3768, 3762, 3783, 3805, 3787, 3805, 3832, 3856, 3810, 3827, 3837, 3853, 3859, 3877, 3884, 3898, 3909, 3933, 3938, 3952, 3958, 3830, 3842, 3806, 3768, 3727, 3738, 3748, 3755, 3757, 3719, 3728, 3691, 3564, 3521, 3525, 3526, 3533, 3540, 3542, 3544, 3545, 3502, 3459, 3423, 3431, 3436, 3391, 3396, 3353, 3309, 3309, 3262, 3209, 3162, 3117, 3025, 2888, 2752, 2704, 2562, 2517, 2518, 2475, 2286, 2288, 2155, 2107, 2107, 2013, 2014, 2014, 2015, 1875, 1875, 1827, 1779, 1732, 1654, 1558, 1462, 1414, 1318, 1319, 1318, 1318, 1273, 1225, 1225, 1225, 1226, 1226, 1179, 1179, 1084, 1036, 988, 993, 995, 996, 997, 997, 950, 856, 856, 856, 856, 856, 808, 809, 809, 764, 764, 716, 668, 668, 668, 668, 668, 668, 668, 668, 668, 668, 668, 668, 668, 668, 668, 668, 668, 668, 668, 668, 668, 668, 668, 668, 668, 668, 668, 668, 623, 623, 623, 623, 575, 575, 575, 575, 575, 575, 575, 575, 575, 575, 575, 575, 527, 527, 527, 527, 527, 527, 527, 527, 527, 480, 480, 480, 480, 480, 480, 480, 432, 384, 336, 336, 336, 336, 336, 336, 336, 336, 336, 336, 336, 336, 336, 336]
-accuracy = []
-UP_accuracy = []
-DOWN_accuracy = []
-EQUAL_accuracy = []
-ts = []
-for t in np.arange(0, 0.2, 0.001):
-    c = np.zeros((3,1))
-    trials = 0; good = 0; total = np.zeros((3,1)); p=np.zeros((3,1))  
-    for file in os.listdir("../DATA/training/stocks/"):
-        df = pd.read_csv("../DATA/training/stocks/"+file, sep ="|")
-        Markov = get_Markov(df.OPEN[:-50], t=t)
-        r, i, g = eval_M(Markov, df.OPEN[-50:].values, t=t)
-        good+=g; total += i; p +=r
-        trials += 50
-    ts.append(t)
-    print(UP_accuracy)
-    print(DOWN_accuracy)
-    print(EQUAL_accuracy)
-    accuracy.append(good); UP_accuracy.append(p[0]/total[0]); DOWN_accuracy.append(p[1]/total[1]); EQUAL_accuracy.append(p[2]/total[2])
-    # print("Evaluation result:")
-    # print(c, trials, good)
+def get_graph():
+    loss_h_mse = []
+    loss_h_cce = []
+    acc_h =  []; all_true = np.zeros((3, 48)); all_pred =  np.zeros((3, 48))
+    ts = []
+    cce = tf.keras.losses.categorical_crossentropy
+    mse = tf.keras.losses.mean_squared_error
+    for t in np.arange(0, 0.15, 0.001):
+        for file in os.listdir("../DATA/training/stocks/"):
+            df = pd.read_csv("../DATA/training/stocks/"+file, sep ="|")
+            if df.OPEN.shape[0] > 700:
+                Markov = get_Markov(df.OPEN[:-150], t=t)
+                preds, true = predict(Markov, df.OPEN[-150:-100].values, t=t)
+                all_true=np.add(all_true , np.hstack(true)); all_pred=np.add(all_pred , np.hstack(preds))
+                mse_l = mse(true, preds)
+                cce_l = cce(true, preds)
+                loss_h_mse.append(mse_l)
+                loss_h_cce.append(cce_l)
+            else:
+                pass
+        print(t)
+        acc = np.divide(all_pred.sum(axis=1).T, all_true.sum(axis=1).T)
+        acc_h.append(acc)
+        ts.append(t)
 
+    loss_h_mse = np.vstack(loss_h_mse)
+    loss_h_cce = np.vstack(loss_h_cce)
+    acc_h = np.vstack(acc_h)
 
+    fig = go.Figure()
+
+    fig.add_trace(go.Scatter(x= ts, y= acc_h.T[0],
+                        mode='lines',
+                        name='accuracy_UP'))
+    fig.add_trace(go.Scatter(x= ts, y= acc_h.T[1],
+                        mode='lines',
+                        name='accuracy_DOWN'))
+    fig.add_trace(go.Scatter(x= ts, y= acc_h.T[2],
+                        mode='lines',
+                        name='accuracy_EQUAL'))
+
+    fig.show()
+
+df = pd.read_csv("../DATA/training/stocks/AAPL.csv", sep ="|")
+variance_preds = get_variance_in_30_d(df.OPEN[:-400].values, df.OPEN[-400:-300].values)
+print(variance_preds)
 fig = go.Figure()
-fig.add_trace(go.Scatter(x= ts, y= np.array(accuracy)/4800,
-                    mode='lines',
-                    name='accuracy'))
-fig.add_trace(go.Scatter(x= ts, y= UP_accuracy,
-                    mode='lines',
-                    name='UP'))
-fig.add_trace(go.Scatter(x= ts, y= DOWN_accuracy,
-                    mode='lines',
-                    name='DOWN'))
-fig.add_trace(go.Scatter(x= ts, y= EQUAL_accuracy,
-                    mode='lines',
-                    name='EQUAL'))
 
+fig.add_trace(go.Scatter(x= list(range(len(variance_preds))), y=variance_preds,
+                    mode='lines',
+                    name='variance'))
+fig.add_trace(go.Scatter(x=list(range(len(variance_preds))),y=getPercentageOfChange(df.OPEN[-400:-300].values),
+                    mode='markers',
+                    name='price'))
+fig.add_trace(go.Scatter(x=list(range(len(variance_preds))),y=[1.008 for i in range(len(variance_preds))],
+                    mode='lines',
+                    name='t1'))
+fig.add_trace(go.Scatter(x=list(range(len(variance_preds))),y=[1-0.008 for i in range(len(variance_preds))],
+                    mode='lines',
+                    name='t2'))
 fig.show()
-print(UP_accuracy)

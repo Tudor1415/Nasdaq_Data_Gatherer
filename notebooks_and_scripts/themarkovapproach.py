@@ -53,32 +53,32 @@ for name, df in data:
 #     print(f"Day={DAY}, error={error}")
 
 # Simulation:
-BALANCE = 250000
-ASSETS = []
-for DAY in range(1000, 1500):
-    rising = []
-    for name, df in data:
-        P_final = getProbabilities(df, DAY)
-        rising.append((name,P_final))
+# BALANCE = 250000
+# ASSETS = []
+# for DAY in range(1000, 1500):
+#     rising = []
+#     for name, df in data:
+#         P_final = getProbabilities(df, DAY)
+#         rising.append((name,P_final))
 
 
-    if BALANCE > 0:
-        rising.sort(key=lambda x: x[1][0])
-        for i in rising[:5]:
-            for name , df in data:
-                if name == i[0]:
-                    assets = (BALANCE*0.2) % df.OPEN[DAY]
-                    BALANCE -= assets * df.OPEN[DAY]
-                    ASSETS.append([name, assets, df])
+#     if BALANCE > 0:
+#         rising.sort(key=lambda x: x[1][0])
+#         for i in rising[:5]:
+#             for name , df in data:
+#                 if name == i[0]:
+#                     assets = (BALANCE*0.2) % df.OPEN[DAY]
+#                     BALANCE -= assets * df.OPEN[DAY]
+#                     ASSETS.append([name, assets, df])
 
-    if len(ASSETS) > 0:
-        for idx, (name_a, q, df) in enumerate(ASSETS):
-            for name_p, prob in rising:
-                if name_p == name_a and prob[0] < prob[1]:
-                    BALANCE += q*df.OPEN[DAY+1]
-                    ASSETS.pop(idx) 
+#     if len(ASSETS) > 0:
+#         for idx, (name_a, q, df) in enumerate(ASSETS):
+#             for name_p, prob in rising:
+#                 if name_p == name_a and prob[0] < prob[1]:
+#                     BALANCE += q*df.OPEN[DAY+1]
+#                     ASSETS.pop(idx) 
     
-print(BALANCE)
+# print(BALANCE)
                     
         
 
