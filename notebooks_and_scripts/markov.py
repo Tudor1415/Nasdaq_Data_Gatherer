@@ -106,67 +106,63 @@ def get_variance_in_30_d(data, test):
             ME1_p = np.linalg.matrix_power(ME1, p)
             ME2_p = np.linalg.matrix_power(ME2, p)
             v += predict_one(ME2_p, i, t=0.082) + predict_one(ME1_p, i, t=0.008)
-j        variance.append(v)
+        variance.append(v)
     return variance
 
-def get_graph():
-    loss_h_mse = []
-    loss_h_cce = []
-    acc_h =  []; all_true = np.zeros((3, 48)); all_pred =  np.zeros((3, 48))
-    ts = []
-    cce = tf.keras.losses.categorical_crossentropy
-    mse = tf.keras.losses.mean_squared_error
-    for t in np.arange(0, 0.15, 0.001):
-        for file in os.listdir("../DATA/training/stocks/"):
-            df = pd.read_csv("../DATA/training/stocks/"+file, sep ="|")
-            if df.OPEN.shape[0] > 700:
-                Markov = get_Markov(df.OPEN[:-150], t=t)
-                preds, true = predict(Markov, df.OPEN[-150:-100].values, t=t)
-                all_true=np.add(all_true , np.hstack(true)); all_pred=np.add(all_pred , np.hstack(preds))
-                mse_l = mse(true, preds)
-                cce_l = cce(true, preds)
-                loss_h_mse.append(mse_l)
-                loss_h_cce.append(cce_l)
-            else:
-                pass
-        print(t)
-        acc = np.divide(all_pred.sum(axis=1).T, all_true.sum(axis=1).T)
-        acc_h.append(acc)
-        ts.append(t)
+def get_random_pred(shape):
+ 
+    return p
 
-    loss_h_mse = np.vstack(loss_h_mse)
-    loss_h_cce = np.vstack(loss_h_cce)
-    acc_h = np.vstack(acc_h)
+acc_h =  []; all_true = np.zeros((3, 48)); all_pred = np.zeros((3, 48)); random = np.zeros((10,3, 48))
+acc_r = []; ts=[]; count = 0
+for t in np.arange(0, 0.015, 0.001):
+    for file in os.listdir("../DATA/training/stocks/"):
+        df = pd.read_csv("../DATA/training/stocks/"+file, sep ="|")
+        if df.OPEN.shape[0] > 700:
+            Markov = get_Markov(df.OPEN[:-150], t=t)
+            preds, true = predict(Markov, df.OPEN[-150:-100].values, t=t)
+            all_true=np.add(all_true , np.hstack(true)); all_pred=np.add(all_pred , np.hstack(preds))
+            for i in range(10):
+                p = np.random.randint(1,30,size=(3,48))
+                for j in range(p.shape[1]):
+                    p.T[i][np.where(p.T[i]==np.max(p.T[i]))] = 1
+                    p.T[i][np.where(p.T[i]!=np.max(p.T[i]))] = 0
+                p[np.where(p>0)] = 1
+                random[i] = np.add(p, random[i])
+        else:
+            pass
+    print(t)
+    acc = np.divide(all_pred.sum(axis=1).T, all_true.sum(axis=1).T)
+    acc_h.append(acc)
+    ts.append(t)
 
-    fig = go.Figure()
+acc_h = np.vstack(acc_h)
 
-    fig.add_trace(go.Scatter(x= ts, y= acc_h.T[0],
-                        mode='lines',
-                        name='accuracy_UP'))
-    fig.add_trace(go.Scatter(x= ts, y= acc_h.T[1],
-                        mode='lines',
-                        name='accuracy_DOWN'))
-    fig.add_trace(go.Scatter(x= ts, y= acc_h.T[2],
-                        mode='lines',
-                        name='accuracy_EQUAL'))
+for i in range(10):
+    random[i] = np.divide(random[i], all_true)
 
-    fig.show()
-
-df = pd.read_csv("../DATA/training/stocks/AAPL.csv", sep ="|")
-variance_preds = get_variance_in_30_d(df.OPEN[:-400].values, df.OPEN[-400:-300].values)
-print(variance_preds)
 fig = go.Figure()
 
-fig.add_trace(go.Scatter(x= list(range(len(variance_preds))), y=variance_preds,
+fig.add_trace(go.Scatter(x= ts, y= acc_h.T[0],
                     mode='lines',
-                    name='variance'))
-fig.add_trace(go.Scatter(x=list(range(len(variance_preds))),y=getPercentageOfChange(df.OPEN[-400:-300].values),
-                    mode='markers',
-                    name='price'))
-fig.add_trace(go.Scatter(x=list(range(len(variance_preds))),y=[1.008 for i in range(len(variance_preds))],
+                    name='accuracy_UP'))
+fig.add_trace(go.Scatter(x= ts, y= acc_h.T[1],
                     mode='lines',
-                    name='t1'))
-fig.add_trace(go.Scatter(x=list(range(len(variance_preds))),y=[1-0.008 for i in range(len(variance_preds))],
+                    name='accuracy_DOWN'))
+fig.add_trace(go.Scatter(x= ts, y= acc_h.T[2],
                     mode='lines',
-                    name='t2'))
+                    name='accuracy_EQUAL'))
+for i in range(10):
+    fig.add_trace(go.Scatter(x= ts, y= random[i][0],
+                    mode='lines',
+                    name='accuracy_random_UP'))
+    fig.add_trace(go.Scatter(x= ts, y= random[i][1],
+                    mode='lines',
+                    name='accuracy_random_DOWN'))
+    fig.add_trace(go.Scatter(x= ts, y= random[i][2],
+                    mode='lines',
+                    name='accuracy_random_EQUAL'))
+
 fig.show()
+
+

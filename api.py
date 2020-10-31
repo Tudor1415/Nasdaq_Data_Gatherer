@@ -8,6 +8,8 @@ import falcon
 import msgpack
 
 import pandas as pd
+import yfinance as yf
+
 
 api = application = falcon.API()
 
@@ -81,17 +83,13 @@ class GetIncomeStatementQuarterly(object):
             resp.status = falcon.HTTP_404
 
 class GetHistoricalPrices(object):
-    def df_to_json(self, df):
-        return_dict = {"Date":[],"OPEN":[],"HIGH":[],"LOW":[],"CLOSE":[],"VOLUME":[],"CURRENCY":[],"INDEX":[]}
-        for i in df.columns:
-            for value in df[i].values:
-                return_dict[i].append(value)
-        return return_dict
 
     def on_get(self, req, resp, symbol):
         try:
-            df = pd.read_csv(f"DATA/data_per_symbol/{symbol.upper()}/historical_prices.csv", sep="|")
-            data = self.df_to_json(df)
+            stock = yf.Ticker(symbol.upper())
+            df = stock.history(period="max")
+            df.index = df.index.strftime('%Y-%m-%d')
+            data = df.to_dict()
             resp.body = json.dumps(data)
             resp.status = falcon.HTTP_201
         except:
@@ -231,7 +229,7 @@ get_nasdaq_historical_news_links = GetNasdaqHistoricalNewsLinks()
 get_balance_sheet_q = GetBalanceSheetQuarterly()
 get_cash_flow_q = GetCashFlowQuarterly()
 get_income_statement_q = GetIncomeStatementQuarterly()
-# get_historical_prices_daily = GetHistoricalPrices()
+get_historical_prices_daily = GetHistoricalPrices()
 # Non-timeseries
 get_holders_detailed_profile = GetHoldersDetailedProfiles()
 get_institutional_holders = GetInstitutionalHolders()
@@ -250,16 +248,19 @@ api.add_route('/info/nasdaq_100', get_nasdaq_100)
 api.add_route('/info/google_news_links', get_google_news_links)
 api.add_route('/info/training_news_coverings', get_training_news_coverings)
 api.add_route('/info/nasdaq_historical_news_links/{symbol}', get_nasdaq_historical_news_links)
+
 api.add_route('/timeseries/balance_sheet_q/{symbol}', get_balance_sheet_q)
 api.add_route('/timeseries/cash_flow_q/{symbol}', get_cash_flow_q)
 api.add_route('/timeseries/income_statement_q/{symbol}', get_income_statement_q)
-# api.add_route('/timeseries/historical_prices_daily/{symbol}', get_historical_prices_daily)
+api.add_route('/timeseries/historical_prices_daily/{symbol}', get_historical_prices_daily)
+
 api.add_route('/static/holders_detailed_profile/{symbol}', get_holders_detailed_profile)
 api.add_route('/static/institutional_holders/{symbol}', get_institutional_holders)
 api.add_route('/static/major_holders/{symbol}', get_major_holders)
 api.add_route('/static/profile/{symbol}', get_profile)
 api.add_route('/static/summary/{symbol}', get_summary)
 api.add_route('/static/sustainability/{symbol}', get_sustainability)
+
 api.add_route('/possible_timeseries/recommendations/{symbol}', get_recommendations)
 api.add_route('/possible_timeseries/yahoo_earnings_estimate/{symbol}', get_yahoo_earnings_estimate)
 api.add_route('/possible_timeseries/yahoo_growth_estimate/{symbol}', get_yahoo_growth_estimate)
