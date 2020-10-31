@@ -3,6 +3,7 @@ from sklearn.preprocessing import PolynomialFeatures
 from sklearn.linear_model import LinearRegression
 import plotly.graph_objects as go
 import pandas as pd
+from sklearn.feature_selection import chi2
 
 # def ma(data, n):
 #     return [sum(data[i: i+n]) / n if i != None  else 0 for i in range(len(data)-n) ]
@@ -57,20 +58,20 @@ import pandas as pd
 # print(np.square(np.diff(ma(preds[750:],14),1) - np.diff(df["OPEN"][750:936],1)).mean(axis=0))
 # print(np.square(preds[750:] - df["OPEN"][750:950]).mean(axis=0))
 
-trials = np.random.randint(1,4, size=(1,1_000_000))[0]
+# trials = np.random.randint(1,4, size=(1,1_000_000))[0]
 
-OO = sum([trials == 1]  and [trials == 1]).sum() / len(trials)
-OT = sum([trials == 1]  and [trials == 2]).sum() / len(trials)
-OTh = sum([trials == 1] and [trials == 3]).sum() / len(trials) 
+# OO = sum([trials == 1]  and [trials == 1]).sum() / len(trials)
+# OT = sum([trials == 1]  and [trials == 2]).sum() / len(trials)
+# OTh = sum([trials == 1] and [trials == 3]).sum() / len(trials) 
 
-TO = sum([trials == 2]  and [trials == 1]).sum() / len(trials)
-TT = sum([trials == 2]  and [trials == 2]).sum() / len(trials) 
-TTh = sum([trials == 2] and [trials == 3]).sum() / len(trials) 
+# TO = sum([trials == 2]  and [trials == 1]).sum() / len(trials)
+# TT = sum([trials == 2]  and [trials == 2]).sum() / len(trials) 
+# TTh = sum([trials == 2] and [trials == 3]).sum() / len(trials) 
 
-ThO = sum([trials == 3]   and [trials == 1]).sum() / len(trials) 
-ThT = sum([trials == 3]   and [trials == 2]).sum() / len(trials) 
-ThTh = sum([trials == 3]  and [trials == 3]).sum() / len(trials) 
+# ThO = sum([trials == 3]   and [trials == 1]).sum() / len(trials) 
+# ThT = sum([trials == 3]   and [trials == 2]).sum() / len(trials) 
+# ThTh = sum([trials == 3]  and [trials == 3]).sum() / len(trials) 
 
-Markov = np.array([[OO, OT, OTh], [TO, TT, TTh], [ThO, ThT, ThTh]], dtype=np.float64)
+# Markov = np.array([[OO, OT, OTh], [TO, TT, TTh], [ThO, ThT, ThTh]], dtype=np.float64)
 
-print(Markov)
+# print(Markov)
